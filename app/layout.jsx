@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
-import "bootstrap/scss/bootstrap.scss";
+import "bootstrap/dist/css/bootstrap.min.css";
 // import "../public/css/plugins/fontawesome-all.min.css";
 
 // ========= Plugins CSS START =========
