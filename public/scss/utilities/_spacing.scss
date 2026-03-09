@@ -1,0 +1,215 @@
+@use "../global" as *;
+
+/*-------------------
+    Section gap
+---------------------*/
+.law-section-gap {
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    @media #{$lg-device} {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    @media #{$md-device} {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}
+
+.law-section-gapBottom {
+    padding-bottom: 100px;
+
+    @media #{$lg-device} {
+        padding-bottom: 80px;
+    }
+
+    @media #{$md-device} {
+        padding-bottom: 60px;
+    }
+}
+
+.law-section-gapTop {
+    padding-top: 100px;
+
+    @media #{$lg-device} {
+        padding-top: 80px;
+    }
+
+    @media #{$md-device} {
+        padding-top: 60px;
+    }
+}
+
+// section gap2
+.law-section-gap2 {
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    @media #{$lg-device} {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    @media #{$md-device} {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
+
+.law-section-gap2Bottom {
+    padding-bottom: 80px;
+
+    @media #{$lg-device} {
+        padding-bottom: 60px;
+    }
+
+    @media #{$md-device} {
+        padding-bottom: 40px;
+    }
+}
+
+.law-section-gap2Top {
+    padding-top: 80px;
+
+    @media #{$lg-device} {
+        padding-top: 60px;
+    }
+
+    @media #{$md-device} {
+        padding-top: 40px;
+    }
+}
+.mt_dec--24{
+    margin-top: -24px;
+}
+.mt_dec--16{
+    margin-top: -16px;
+}
+
+// Define the breakpoints
+$breakpoints: (
+    'xxl': $xxl-device,
+    'xl': $xl-device,
+    'lg': $lg-device,
+    'md': $md-device,
+    'sm': $sm-device,
+    'xs': $xs-device,
+    'xxs': $xxs-device
+);
+
+/*--------------------------
+        Padding & Margin  
+---------------------------*/
+@for $i from 0 through 15 {
+    .py--#{4 * $i} {
+        padding-top: #{4 * $i}px !important;
+        padding-bottom: #{4 * $i}px !important;
+    }
+
+    .px--#{4 * $i} {
+        padding-left: #{4 * $i}px !important;
+        padding-right: #{4 * $i}px !important;
+    }
+
+    .pt--#{4 * $i} {
+        padding-top: #{4 * $i}px !important;
+    }
+
+    .pb--#{4 * $i} {
+        padding-bottom: #{4 * $i}px !important;
+    }
+
+    .pl--#{4 * $i} {
+        padding-left: #{4 * $i}px !important;
+    }
+
+    .pr--#{4 * $i} {
+        padding-right: #{4 * $i}px !important;
+    }
+
+    .mt--#{4 * $i} {
+        margin-top: #{4 * $i}px !important;
+    }
+
+    .mb--#{4 * $i} {
+        margin-bottom: #{4 * $i}px !important;
+    }
+
+    .mr--#{4 * $i} {
+        margin-right: #{4 * $i}px !important;
+    }
+
+    .ml--#{4 * $i} {
+        margin-left: #{4 * $i}px !important;
+    }
+}
+
+// for responsive
+@for $i from 0 through 15 {
+    @each $label, $breakpoint in $breakpoints {
+        .py-#{$label}--#{$i * 4} {
+            @media #{$breakpoint} {
+                padding-top: #{$i * 4}px !important;
+                padding-bottom: #{$i * 4}px !important;
+            }
+        }
+
+        .px-#{$label}--#{$i * 4} {
+            @media #{$breakpoint} {
+                padding-left: #{$i * 4}px !important;
+                padding-right: #{$i * 4}px !important;
+            }
+        }
+
+        .pt-#{$label}--#{$i * 4} {
+            @media #{$breakpoint} {
+                padding-top: #{$i * 4}px !important;
+            }
+        }
+
+        .pb-#{$label}--#{$i * 4} {
+            @media #{$breakpoint} {
+                padding-bottom: #{$i * 4}px !important;
+            }
+        }
+
+        .pl-#{$label}--#{$i * 4} {
+            @media #{$breakpoint} {
+                padding-left: #{$i * 4}px !important;
+            }
+        }
+
+        .pr-#{$label}--#{$i * 4} {
+            @media #{$breakpoint} {
+                padding-right: #{$i * 4}px !important;
+            }
+        }
+
+        .mt-#{$label}--#{$i * 4} {
+            @media #{$breakpoint} {
+                margin-top: #{$i * 4}px !important;
+            }
+        }
+
+        .mb-#{$label}--#{$i * 4} {
+            @media #{$breakpoint} {
+                margin-bottom: #{$i * 4}px !important;
+            }
+        }
+
+        .mr-#{$label}--#{$i * 4} {
+            @media #{$breakpoint} {
+                margin-right: #{$i * 4}px !important;
+            }
+        }
+
+        .ml-#{$label}--#{$i * 4} {
+            @media #{$breakpoint} {
+                margin-left: #{$i * 4}px !important;
+            }
+        }
+    }
+}
+

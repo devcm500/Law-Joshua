@@ -1,0 +1,12 @@
+@use "../global" as *;
+/*---------------------
+Card Style 
+-----------------------*/
+
+.law-single-group {
+    margin: -5px;
+
+    .law-single-list {
+        margin: 5px;
+    }
+}

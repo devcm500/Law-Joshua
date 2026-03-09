@@ -1,0 +1,130 @@
+@use "../global" as *;
+
+/*--------------
+Scroll Up 
+----------------*/
+
+#scrollUp {
+    width: 70px;
+    height: 80px;
+    right: 100px;
+    bottom: 60px;
+    text-align: center;
+    z-index: 9811 !important;
+    text-decoration: none;
+    background: #fff;
+    line-height: 80px;
+    color: #757589;
+    font-size: 15px;
+    font-weight: 400;
+    @extend %transition;
+    display: inline-block;
+    background: #ffffff;
+
+    @media #{$md-device} {
+        right: 20px;
+        bottom: 40px;
+    }
+
+    @media #{$sm-device} {
+        right: 20px;
+        bottom: 40px;
+    }
+
+    &::before {
+        width: 100%;
+        height: 100%;
+        left: 0;
+        bottom: 0;
+        background: rgba(0, 2, 72, 0.1);
+        content: "";
+        position: absolute;
+        z-index: -1;
+        transform-style: preserve-3d;
+        transform: rotateY(-10deg);
+        filter: blur(50px);
+    }
+
+    &::after {
+        background: #ffffff;
+        position: absolute;
+        content: "";
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        transform-style: preserve-3d;
+        transform: rotateY(-10deg);
+    }
+
+    @media #{$sm-device} {
+        right: 20px;
+        bottom: 30px;
+        width: 50px;
+        height: 60px;
+        line-height: 60px;
+    }
+
+    span {
+        &.text {
+            position: relative;
+            display: inline-block;
+            margin-top: 7px;
+
+            @media #{$sm-device} {
+                margin-top: 3px;
+            }
+
+            &::after {
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 0 5px 7px 5px;
+                border-color: transparent transparent var(--color-primary) transparent;
+                position: absolute;
+                content: "";
+                left: 50%;
+                top: 21%;
+                transform: translateX(-50%);
+            }
+        }
+    }
+
+    &:hover {
+        span {
+            &.text {
+                color: var(--color-primary);
+            }
+        }
+    }
+}
+
+
+/*------------------------------
+    Custom Scrollbar Right
+--------------------------------*/
+
+.law-scroll-max-height {
+    max-height: 500px !important;
+    overflow-y: scroll;
+}
+
+.law-scroll::-webkit-scrollbar {
+    width: 10px;
+}
+
+.law-scroll::-webkit-scrollbar-thumb {
+    background-color: #e8e6e9 !important;
+    outline: 0;
+    border-radius: 10px;
+}
+
+.law-scroll::-webkit-scrollbar-track {
+    box-shadow: 0 0 1px #cecdcd;
+    background: #f6f6f6 !important;
+    padding: 1px;
+    border-radius: 8px;
+}

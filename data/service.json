@@ -1,0 +1,468 @@
+{
+  "service": [
+    {
+      "id": 1,
+      "serial": 1,
+      "title": "In the area of family law, our concentrations include the following:",
+      "heading": "Business Law",
+      "subheading": "Service",
+      "bannerImg": "/images/service/service-details-1.png",
+      "cardImg": "/images/card/card-img-1.png",
+      "desc": "Business law is the primary area of our practice.  In this area of practice, our law firm manages litigation as well as other types of legal risks and exposure for local and out of state businesses.  Our law firm also defends companies, corporations, boards of directors, shareholders, and business men and women in connection with complex and contested matters.  Additionally, we will represent our clients as plaintiffs when the circumstances are appropriate to prosecute illegal business activity.  We are also able to provide quality general legal consultation to businesses, business owners, managers, corporate directors and officers, and various types of boards.  In this capacity, our law firm can serve not only as a litigator for a particular business organization, but also as outside general counsel to certain types of business organizations, depending on the size of that organization and its legal needs.",
+      "descTwo": "We also recognize that litigation may not be the best option for a given matter.  Businesses often require litigation deterrence to avoid financial exposure, publicity, and other uncertainties that accommodate litigation.  In the area of litigation deterrence, we will carefully counsel businesses or persons out of a potentially litigious situation or during the contracting phase of a business arrangement or joint venture agreement in order to deter future unnecessary and expensive litigation.",
+      "descThree": "From small representing small businesses to representing businesses with hundreds of employees, our law firm has the experience and ability to aggressively and successfully handle the litigation needs of our business clients.",
+      "card": [
+        {
+          "img": "/images/service/service-img-1.png",
+          "title": "In the area of business law, our concentrations include the following:",
+          "desc": "Most importantly, our legal teams works closely with the client in order to accomplish a result specifically tailored to the client personal needs and preferences.",
+          "list": [
+            {
+              "text": "Fraud Related Litigation"
+            },
+            {
+              "text": "Breach of Fiduciary Duty and Trust Litigation"
+            },
+            {
+              "text": "Contractual Disputes and Breaches"
+            },
+            {
+              "text": "Drafting of Operating Agreements, Articles of Organization, and Other Business Entity Documents"
+            },
+            {
+              "text": "Business Entity Formation"
+            },
+            {
+              "text": "Unfair Trade Practices"
+            },
+            {
+              "text": "Corporate Law, including Non-Profits"
+            },
+            {
+              "text": "Homeowners Associations"
+            },
+            {
+              "text": "Shareholder's Rights"
+            },
+            {
+              "text": "Real Estate Covenants and Other Restrictive Covenants"
+            },
+            {
+              "text": "Telecommunication Contracts"
+            },
+            {
+              "text": "Arbitration and Mediation"
+            },
+            {
+              "text": "Indemnity Agreements"
+            },
+            {
+              "text": "Franchise Law"
+            },
+            {
+              "text": "Board of Directors Consultation and Board Governance"
+            },
+            {
+              "text": "Contract Compliance"
+            },
+            {
+              "text": "Anti-Trust Litigation"
+            },
+            {
+              "text": "Insurance Coverage Issues"
+            },
+            {
+              "text": "General Advice"
+            }
+          ]
+        }
+      ],
+      "feature": [
+        {
+          "title": "Services Features",
+          "desc": "We are trusted advisors to individuals forced to navigate through the complex area of law known as family law which involves divorce, custody, support, community property, protective orders, etc.",
+          "list": [
+            {
+              "text": "Visitation"
+            },
+            {
+              "text": "Protective Orders"
+            },
+            {
+              "text": "Community Property"
+            },
+            {
+              "text": "Interdiction"
+            },
+            {
+              "text": "General Advices"
+            },
+            {
+              "text": "General Advices"
+            },
+            {
+              "text": "Child Abuse"
+            },
+            {
+              "text": "Relocation"
+            },
+            {
+              "text": "Spousal Support"
+            },
+            {
+              "text": "Protective Orders"
+            },
+            {
+              "text": "Child Support"
+            },
+            {
+              "text": "Contempt"
+            }
+          ]
+        }
+      ],
+      "profile": [
+        {
+          "img": "/images/person/person-1.png",
+          "name": "Joshua D. Allison",
+          "type": "Leadership",
+          "desc": "We are trusted advisors to individuals forced to navigate through the complex area of law known as family law which involves divorce, custody, support, community property, protective orders, etc."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "serial": 2,
+      "title": "In the area of family law, our concentrations include the following:",
+      "heading": "Family Law",
+      "subheading": "Service",
+      "bannerImg": "/images/service/service-details-2.png",
+      "cardImg": "/images/card/card-img-2.png",
+      "desc": "Family law litigation continues to be an important area of concentration for our law firm.  We are trusted advisors to individuals forced to navigate through the complex area of law known as family law which involves divorce, custody, support, community property, protective orders, etc. We are there for our clients during these exceptionally trying times, fighting for their interests and their families and protecting their property. We regularly handle complex and highly contested divorces, community property, and custody cases.  As a domestic litigation law firm, we also regularly handle the unique aspects of this type of litigation, which includes Hearing Officer Conferences, Judge trials, and expedited proceedings.  Most importantly, our legal teams works closely with the client in order to accomplish a result specifically tailored to the client's personal needs and preferences.",
+      "card": [
+        {
+          "img": "/images/service/service-img-1.png",
+          "title": "In the area of family law, our concentrations include the following:",
+          "desc": "Most importantly, our legal teams works closely with the client in order to accomplish a result specifically tailored to the client personal needs and preferences.",
+          "list": [
+              {
+                "text": "Divorce"
+              },
+              {
+                "text": "Custody and Visitation"
+              },
+              {
+                "text": "Contractual Disputes and Breaches"
+              },
+              {
+                "text": "Community Property, including community business valuation and community property protection orders"
+              },
+              {
+                "text": "Parental Alienation Cases"
+              },
+              {
+                "text": "Spousal Support"
+              },
+              {
+                "text": "Child Support"
+              },
+              {
+                "text": "Contempt"
+              },
+              {
+                "text": "Relocation"
+              },
+              {
+                "text": "Grandparents' Rights"
+              },
+              {
+                "text": "Adoption and Parental Right Termination"
+              },
+              {
+                "text": "Visitation"
+              },
+              {
+                "text": "Restraining Orders"
+              },
+              {
+                "text": "Protective Orders"
+              },
+              {
+                "text": "Child Abuse"
+              },
+              {
+                "text": "Community Business Seizure"
+              },
+              {
+                "text": "Interdiction"
+              },
+              {
+                "text": "Prenuptial Agreements"
+              },
+              {
+                "text": "General Advice"
+              },
+              {
+                "text": "Jurisdiction and Venue Issues"
+              }
+          ]
+        }
+      ],
+      "feature": [
+        {
+          "title": "Services Features",
+          "desc": "We are trusted advisors to individuals forced to navigate through the complex area of law known as family law which involves divorce, custody, support, community property, protective orders, etc.",
+          "list": [
+            {
+              "text": "Visitation"
+            },
+            {
+              "text": "Protective Orders"
+            },
+            {
+              "text": "Community Property"
+            },
+            {
+              "text": "Interdiction"
+            },
+            {
+              "text": "General Advices"
+            },
+            {
+              "text": "General Advices"
+            },
+            {
+              "text": "Child Abuse"
+            },
+            {
+              "text": "Relocation"
+            },
+            {
+              "text": "Spousal Support"
+            },
+            {
+              "text": "Protective Orders"
+            },
+            {
+              "text": "Child Support"
+            },
+            {
+              "text": "Contempt"
+            }
+          ]
+        }
+      ],
+      "profile": [
+        {
+          "img": "/images/person/person-1.png",
+          "name": "Joshua D. Allison",
+          "type": "Leadership",
+          "desc": "We are trusted advisors to individuals forced to navigate through the complex area of law known as family law which involves divorce, custody, support, community property, protective orders, etc."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "serial": 3,
+      "title": "In the area of family law, our concentrations include the following:",
+      "heading": "Personal Injury Law",
+      "subheading": "Service",
+      "bannerImg": "/images/service/service-details-3.png",
+      "cardImg": "/images/card/card-img-3.png",
+      "desc": "We proudly represent individuals who have been seriously injured as a result of the fault of another. In this area of our practice, we passionately represent injured parties with the absolute highest standards of professionalism and ethics. Our personal injury clients have oftentimes sustained life-changing injuries as a result of the fault of another and we will facilitate the absolute best medical treatment for the injured client while fighting aggressively to obtain a maximum recovery from the responsible parties. We also expedite our personal injury practice in order to facilitate a timely and fair recovery for our injured clients.",
+      "card": [
+        {
+          "img": "/images/service/service-img-1.png",
+          "title": "In the area of personal injury law, our concentrations include the following:",
+          "desc": "Most importantly, our legal teams works closely with the client in order to accomplish a result specifically tailored to the client personal needs and preferences.",
+          "list": [
+            {
+              "text": "Commercial Vehicle Accidents"
+            },
+            {
+              "text": "18-Wheeler Accidents"
+            },
+            {
+              "text": "Wrongful Death"
+            },
+            {
+              "text": "Motorcycle Accidents"
+            },
+            {
+              "text": "Bicycle Accidents"
+            },
+            {
+              "text": "Dog Bites"
+            },
+            {
+              "text": "Premise Liability"
+            },
+            {
+              "text": "Intentional Acts"
+            },
+            {
+              "text": "Slip and Falls"
+            },
+            {
+              "text": "Insurance Coverage Issues"
+            },
+            {
+              "text": "General Advice"
+            }
+          ]
+        }
+      ],
+      "feature": [
+        {
+          "title": "Services Features",
+          "desc": "We are trusted advisors to individuals forced to navigate through the complex area of law known as family law which involves divorce, custody, support, community property, protective orders, etc.",
+          "list": [
+            {
+              "text": "Visitation"
+            },
+            {
+              "text": "Protective Orders"
+            },
+            {
+              "text": "Community Property"
+            },
+            {
+              "text": "Interdiction"
+            },
+            {
+              "text": "General Advices"
+            },
+            {
+              "text": "General Advices"
+            },
+            {
+              "text": "Child Abuse"
+            },
+            {
+              "text": "Relocation"
+            },
+            {
+              "text": "Spousal Support"
+            },
+            {
+              "text": "Protective Orders"
+            },
+            {
+              "text": "Child Support"
+            },
+            {
+              "text": "Contempt"
+            }
+          ]
+        }
+      ],
+      "profile": [
+        {
+          "img": "/images/person/person-1.png",
+          "name": "Joshua D. Allison",
+          "type": "Leadership",
+          "desc": "We are trusted advisors to individuals forced to navigate through the complex area of law known as family law which involves divorce, custody, support, community property, protective orders, etc."
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "serial": 4,
+      "title": "In the area of family law, our concentrations include the following: ",
+      "heading": "Out of State Clients",
+      "subheading": "Service",
+      "bannerImg": "/images/service/service-details-4.png",
+      "cardImg": "/images/card/card-map.png",
+      "homeLink": "At JOSHUA D. ALLISON, A Professional Law Corporation,",
+      "desc": " we especially value the trust placed in us by our many out of state clients.  Many of our business, family, and personal injury clients do not primarily reside in Louisiana, yet by virtue of various circumstances find themselves in need of a local Louisiana lawyer.  We rise to the occasion to meet the special needs presented by our out of state clients.  These clients include foreign corporations with business interests in Louisiana, individuals who are confronted with a domestic matter which crosses into the State of Louisiana, or individuals who have been seriously injured while in the State of Louisiana but who do not live in the State of Louisiana.  As an out of state client, you can rest assured that our law firm is accountable, will maintain frequent contact, and will be ready to face whatever legal matter is presented in the State of Louisiana.",
+      "card": [
+        {
+          "img": "/images/service/service-img-1.png",
+          "title": "For Out of State Clients, our services include the following:",
+          "desc": "we especially value the trust placed in us by our many out of state clients.  Many of our business, family, and personal injury clients do not primarily reside in Louisiana, yet by virtue of various circumstances find themselves in need of a local Louisiana lawyer.  We rise to the occasion to meet the special needs presented by our out of state clients.  These clients include foreign corporations with business interests in Louisiana, individuals who are confronted with a domestic matter which crosses into the State of Louisiana, or individuals who have been seriously injured while in the State of Louisiana but who do not live in the State of Louisiana.  As an out of state client, you can rest assured that our law firm is accountable, will maintain frequent contact, and will be ready to face whatever legal matter is presented in the State of Louisiana.",
+          "list": [
+            {
+              "text": "Jurisdiction and Venue Issues"
+            },
+            {
+              "text": "Remote Legal Consultations"
+            },
+            {
+              "text": "Document Review and Preparation"
+            },
+            {
+              "text": "Court Representation for Non-Residents"
+            },
+            {
+              "text": "Interstate Legal Disputes"
+            },
+            {
+              "text": "Business and Property Transactions"
+            },
+            {
+              "text": "Family Law Matters for Non-Residents"
+            },
+            {
+              "text": "Virtual Mediation and Arbitration"
+            },
+            {
+              "text": "General Legal Advice for Out-of-State Clients"
+            }
+          ]
+        }
+      ],
+      "feature": [
+        {
+          "title": "Services Features",
+          "desc": "We are trusted advisors to individuals forced to navigate through the complex area of law known as family law which involves divorce, custody, support, community property, protective orders, etc.",
+          "list": [
+            {
+              "text": "Visitation"
+            },
+            {
+              "text": "Protective Orders"
+            },
+            {
+              "text": "Community Property"
+            },
+            {
+              "text": "Interdiction"
+            },
+            {
+              "text": "General Advices"
+            },
+            {
+              "text": "General Advices"
+            },
+            {
+              "text": "Child Abuse"
+            },
+            {
+              "text": "Relocation"
+            },
+            {
+              "text": "Spousal Support"
+            },
+            {
+              "text": "Protective Orders"
+            },
+            {
+              "text": "Child Support"
+            },
+            {
+              "text": "Contempt"
+            }
+          ]
+        }
+      ],
+      "profile": [
+        {
+          "img": "/images/person/person-1.png",
+          "name": "Joshua D. Allison",
+          "type": "Leadership",
+          "desc": "We are trusted advisors to individuals forced to navigate through the complex area of law known as family law which involves divorce, custody, support, community property, protective orders, etc."
+        }
+      ]
+    }
+  ]
+}

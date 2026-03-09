@@ -1,0 +1,100 @@
+@use 'color' as *;
+
+/*********************************************************************************
+
+	Site Name: Joshua D. Allison Attorney Site
+	Description: A perfect Website For Law and legal services. It comes with nice and clean design.
+	Note: This is style scss.
+
+**********************************************************************************/
+
+/************ TABLE OF CONTENTS ***************
+
+    01. root
+    02. mixins
+    03. extend
+    04. typography
+    05. shortcode
+    06. spacing
+    07. forms
+    08. common
+
+**********************************************/
+
+:root {
+    --font-primary: "Spectral", serif;
+    --font-secondary: "Times New Roman", serif;
+    
+    --font-awesome: "Font Awesome 6 Pro";
+
+    // Heading Font 
+    --h1: 52px; //52px 1.29
+    --h2: 44px; //44px 1.23
+    --h3: 34px; // 34px 1.14
+    --h4: 30px; //30px  1.25
+    --h5: 20px; //18px 1.24
+    --h6: 16px; //20px 1.25
+
+    //Body Fonts Size
+    --font-size-b1: 24px;
+    --font-size-b2: 18px;
+    --font-size-b3: 16px;
+    --font-size-b4: 12px;
+
+    //Line Height
+    --line-height-b1: 1.5; //24px
+    --line-height-b2: 1.67; //18px
+    --line-height-b3: 1.67; //16px
+    --line-height-b4: 1; //12px
+
+    // Font Weight
+    --fw-light: 300;
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-semi-bold: 600;
+    --fw-bold: 700;
+    --fw-extra-bold: 800;
+    --fw-black: 900;
+
+    @each $group, $color-map in $colors {
+        @each $color-name, $color-value in $color-map {
+            --color-#{$color-name}: #{$color-value};
+        }
+    }
+
+    @each $color, $shades in $colorsVar {
+        @each $prop, $value in $shades {
+            --color-#{$color}-#{$prop}:#{$value};
+        }
+    }
+
+    @each $color, $shades in $gradients {
+        @each $value in $shades {
+            --gradient-#{$color} : #{$value};
+        }
+    }
+
+    // Radius
+    --radius-full: 50%;
+
+    //transition easing
+    --transition-1: 0.3s;
+    --transition-2: all 0.3s linear;
+
+    //Shadows
+    // --shadow-primary: 0px 4px 10px rgba(37, 47, 63, 0.1);
+}
+
+// Breakpoints
+$xxl-device: 'only screen and (max-width: 1599px)';
+$xl-device: 'only screen and (max-width: 1399px)';
+$lg-device: 'only screen and (max-width: 1199px)';
+$md-device: 'only screen and (max-width: 991px)';
+$sm-device: 'only screen and (max-width: 767px)';
+$xs-device: 'only screen and (max-width: 575px)';
+$xxs-device: 'only screen and (max-width: 479px)';
+
+$xl-device-only: 'only screen and (min-width: 1200px) and (max-width: 1599px)';
+$lg-device-only: 'only screen and (min-width: 992px) and (max-width: 1199px)';
+$md-device-only: 'only screen and (min-width: 768px) and (max-width: 991px)';
+$xxl-device-only: 'only screen and (min-width: 1920px)';

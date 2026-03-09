@@ -1,0 +1,50 @@
+$colors: (
+    'common' : ('primary': #FF0000,
+        'secondary': #253551,
+        'secondary-alt': #F5C05D,
+        'body': #6b7385,
+        'light': #EBEEF9,
+        'white': #ffffff,
+        'black': #000000,
+    ),
+
+    'social' : ('facebook': #3B5997,
+        'twitter': #1BA1F2,
+        'youtube': #ED4141,
+        'linkedin': #0077B5,
+        'pinterest': #E60022,
+        'instagram': #C231A1,
+        'vimeo': #00ADEF,
+        'twitch': #6441A3,
+        'discord': #7289da,
+    ),
+
+    'info' : ('success': #3EB75E,
+        'danger': #FF0003,
+        'warning': #FF8F3C,
+        'info': #1BA2DB,
+    ),
+    'border': ('1': #7E6FC0,
+        '2': #e7df03,
+        '3': #1BA2DB,
+    )
+);
+
+
+//  Color Vars
+
+$colorsVar: (
+    dark:(100: #555C68, 200:#253551, 300:#0F273E),
+);
+
+// Gradient
+$gradients: (
+    1: linear-gradient(179deg, #B5862E -38.1%, #FCF6BA 99.05%),
+    2: linear-gradient(0deg, rgb(255, 255, 255) 0%, rgb(240, 242, 255) 100%),
+    3: linear-gradient(90deg, #8DA9FC 0%, #B48DD5 100%),
+    4: radial-gradient(50% 50% at 50% 50%, #F5C05D 0%, rgba(245, 192, 93, 0.00) 100%),
+    5: radial-gradient(50% 50% at 50% 50%, rgba(218, 232, 255, 0.20) 0%, rgba(218, 232, 255, 0.00) 100%),
+    6: linear-gradient(180deg, #B5862E 20%, #F7EE99 52%, #AA771C 87%),
+    7: linear-gradient(179deg, #CC1B1B -38.1%, #F00 99.05%),
+    8: radial-gradient(50% 50% at 50% 50%, #F00 0%, rgba(255, 0, 0, 0.00) 100%),
+);

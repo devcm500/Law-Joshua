@@ -1,0 +1,145 @@
+@use '../global' as *;
+
+.brand {
+    &.my--100 {
+        margin: 100px 0;
+
+        @media #{$lg-device} {
+            margin: 60px 0;
+        }
+
+        @media #{$sm-device} {
+            margin: 70px 0;
+        }
+    }
+
+    &__list {
+        margin: 0;
+        padding: 0;
+        gap: 10px;
+        display: flex;
+        // flex-wrap: wrap;
+        justify-content: center;
+
+    .single-brand {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: var(--color-white);
+        border-radius: 8px;
+        border: 2px solid rgba(from var(--color-secondary) r g b / .05);
+        max-width: 256px;
+        width: 256px;
+        height: 180px;
+        transition: all .3s ease-in-out;
+        overflow: hidden;
+
+        img {
+            transition: all .3s ease-in-out;
+
+            @media #{$md-device} {
+                padding: 16px;
+            }
+        }
+
+        &:hover {
+            img {
+                transform: scale(1.03);
+            }
+        }
+
+        @media #{$xl-device} {
+            width: 215px;
+        }
+
+        @media #{$lg-device} {
+            width: 180px !important;
+        }
+
+        @media #{$md-device} {
+            height: 150px;
+            width: 180px !important;
+        }
+
+        @media #{$xs-device} {
+            height: 100px;
+            width: 100px !important;
+        }
+        }
+    }
+}
+
+
+
+
+
+@mixin white-gradient {
+    background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+$animationSpeed: 10s;
+
+// Animation
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-250px * 1))
+    }
+}
+
+
+// Styling
+.slider {
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+
+    &::before,
+    &::after {
+        @include white-gradient;
+        content: "";
+        height: 100%;
+        position: absolute;
+        width: 100px;
+        z-index: 2;
+    }
+
+    &::after {
+        right: 0;
+        top: 0;
+        transform: rotateZ(180deg);
+    }
+
+    &::before {
+        left: 0;
+        top: 0;
+    }
+
+    .slide-track {
+        animation: scroll $animationSpeed linear infinite;
+        display: flex;
+        width: calc(256px * 5);
+    }
+}
+
+.brand {
+    position: relative;
+
+    &::after {
+        position: absolute;
+        content: "";
+        width: 430px;
+        height: 95px;
+        background: var(--gradient-4);
+        filter: blur(110px);
+        rotate: 126.105deg;
+        right: 50%;
+        top: 50%;
+        z-index: -1;
+        pointer-events: none;
+    }
+}

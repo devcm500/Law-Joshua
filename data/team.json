@@ -1,0 +1,426 @@
+{
+  "team": [
+    {
+      "id": 1,
+      "img": "/images/team/team-1.png",
+      "brandImg": "/images/brand/brand-6.png",
+      "signature": "/images/bg/signature.svg",
+      "subtext": "Northshore",
+      "title": "Meet Josh Allison",
+      "name": "Joshua D. Allison",
+      "text": "Leadership",
+      "isGap": false,
+      "occupation": "A Professional Law Corporation",
+      "desc": "Joshua \"Josh\" D. Allison is the owner and managing attorney of JOSHUA D. ALLISON, A Professional Law Corporation, and is also the lead litigation attorney in all of the law firm’s areas of practice. His mission is to provide exceptional representation to all of his clients. This only comes by virtue of aggressive advocacy, client responsiveness, and adherence to the highest standards of professionalism and ethics at all times.",
+      "descTwo": "Josh is licensed to practice in all state courts of Louisiana, including all appellate courts and the Louisiana Supreme Court.  He is also licensed to practice in the United States District Courts for the Eastern,  Middle, and Western Districts of Louisiana as well as the United States Court of Appeal for the Fifth Circuit.  He is a current and active member of the Louisiana State Bar Association, 22nd JDC Bar Association and the Federal Bar Association.",
+      "descThree": "In addition to owning and operating the law firm, Josh serves as the current Chairman of the Republican Parish Executive Committee, an elected position. In this role, Josh and his fellow elected members of the committee endorse certain ballot propositions, conservative and upstanding elected officials, and monitor election integrity. Josh lives with his wife and three children in Tchefuncta Estates near Madisonville, Louisiana and attends First Baptist of Covington.  Josh not only acknowledges but appreciates the important role that one’s personal faith in God often plays in his profession as well as in the personal lives of his many clients.",
+      "descFour": "JOSHUA D. ALLISON, A Professional Law Corporation is a civil litigation law firm specializing in civil litigation and trial advocacy in the areas of business law, family law,",
+      "hasInfo": true,
+      "information": [
+        {
+          "id": 1,
+          "call": "19853025630",
+          "occupation": "Owner & Managing Attorney",
+          "experience": "30 Years of Experience",
+          "practiceArea": "Business, Family, Personal Injury Law",
+          "dateOfBirth": "NAN",
+          "email": "NAN",
+          "phone": "NAN"
+        }
+      ],
+      "about": [
+        {
+          "id": 1,
+          "title": "Know more about me!",
+          "desc": "Joshua \"Josh\" D. Allison is the owner and managing attorney of JOSHUA D. ALLISON, A Professional Law Corporation, and is also the lead litigation attorney in all of the law firm’s areas of practice. His mission is to provide exceptional representation to all of his clients. This only comes by virtue of aggressive advocacy, client responsiveness, and adherence to the highest standards of professionalism and ethics at all times.",
+          "descTwo": "Josh is a native and life-long resident of southeast Louisiana having grown up in beautiful St. Bernard Parish while attending school in New Orleans.  He then attended Southeastern Louisiana University in Hammond, Louisiana on multiple academic scholarships and graduated in 2009 with a Bachelors of Arts Degree majoring in political science and minoring in history.  Josh then attended Loyola College of Law in historic Uptown New Orleans, graduating in 2014 with his Juris Doctor in Civil Law as well as a Certificate in International Law.",
+          "descThree": "While in law school, Josh was elected by his fellow students to the Honor Board, a student-led organization responsible for administering Loyola's ethics code among the student body.  Also while in law school, he was honored to successfully represent both the Loyola College of Law and the City of New Orleans as a competing oralist in the world's largest and most prestigious moot court competition, the Philip C. Jessup International Law Moot Court Competition.  After several months of hard work and preparation, Josh and his team took first place at the national regional level and then advanced to the international competition in Washington D.C. as one of only twelve teams representing the United States against over 100 law schools from around the world, a very proud first for the Loyola College of Law.",
+          "descFour": "Also while in law school, Josh worked as a law clerk and then as an associate attorney at the Mid-City New Orleans law firm of Burgos & Evans, LLC.  While at Burgos & Evans, Josh worked on various types of complex civil litigation cases including products liability, medical malpractice, appellate procedure, and family law, and also worked with other talented attorneys and a dedicated staff of legal assistants and paralegals.",
+          "descFive": "Josh is a graduate of the National Institute of Trial Advocacy, an American not-for-profit organization that provides lawyers with specialized training in trial advocacy skills. As a graduate of this program, Josh is part of fifty year heritage that has equipped thousands of attorneys with valuable trial and litigation skills. Josh proudly brings these skills to the table for every case, for every client.",
+          "descSix": "Josh is licensed to practice in all state courts of Louisiana, including all appellate courts and the Louisiana Supreme Court.  He is also licensed to practice in the United States District Courts for the Eastern,  Middle, and Western Districts of Louisiana as well as the United States Court of Appeal for the Fifth Circuit.  He is a current and active member of the Louisiana State Bar Association, 22nd JDC Bar Association, 21st JDC Bar Association, the 24th JDC Bar Association, the Federal Bar Association, and Louisiana Association for Justice.",
+          "descSeven": "In addition to owning and operating the law firm, Josh is also an elected official in the Parish of St. Tammany serving as Chairman of the Republican Parish Executive Committee.  In this role, Josh and his fellow elected members of the committee endorse certain ballot propositions, conservative and upstanding elected officials, and monitor election integrity.  Josh lives with his wife and three children in Tchefuncta Estates in Covington, Louisiana and attends First Baptist of Covington.  Josh not only acknowledges but appreciates the important role that one’s personal faith in God often plays in his profession as well as in the personal lives of his many clients.",
+          "highlightedText": "JOSHUA D. ALLISON, A Professional Law Corporation,",
+          "additionalInfo": ", and is also the lead litigation attorney in all of the law firm’s areas of practice. His mission is to provide exceptional representation to all of his clients. This only comes by virtue of aggressive advocacy, client responsiveness, and adherence to the highest standards of professionalism and ethics at all times.",
+          "tab": [
+            {
+              "tab": "mission",
+              "isActive": true,
+              "desc": "Josh is a native and life-long resident of southeast Louisiana having grown up in beautiful St. Bernard Parish while attending school in New Orleans. He then attended Southeastern Louisiana University in Hammond, Louisiana on multiple academic scholarships and",
+              "highlightedText": "graduated in 2009 with a Bachelors of Arts Degree",
+              "additionalText": " majoring in political science and minoring in history.",
+              "list": [
+                {
+                  "text": "Contractual Disputes and Breaches"
+                },
+                {
+                  "text": "Telecommunication Contracts"
+                }
+              ]
+            },
+            {
+              "tab": "vision",
+              "isActive": false,
+              "desc": "Josh is a native and life-long resident of southeast Louisiana having grown up in beautiful St. Bernard Parish while attending school in New Orleans. He then attended Southeastern Louisiana University in Hammond, Louisiana on multiple academic scholarships and",
+              "highlightedText": "graduated in 2009 with a Bachelors of Arts Degree",
+              "additionalText": " majoring in political science and minoring in history.",
+              "list": [
+                {
+                  "text": "Contractual Disputes and Breaches"
+                },
+                {
+                  "text": "Telecommunication Contracts"
+                }
+              ]
+            },
+            {
+              "tab": "approach",
+              "isActive": false,
+              "desc": "Josh is a native and life-long resident of southeast Louisiana having grown up in beautiful St. Bernard Parish while attending school in New Orleans. He then attended Southeastern Louisiana University in Hammond, Louisiana on multiple academic scholarships and",
+              "highlightedText": "graduated in 2009 with a Bachelors of Arts Degree",
+              "additionalText": " majoring in political science and minoring in history.",
+              "list": [
+                {
+                  "text": "Contractual Disputes and Breaches"
+                },
+                {
+                  "text": "Telecommunication Contracts"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "img": "/images/team/team-2.png",
+      "name": "Jazmine A. Torres",
+      "text": "Of Counsel",
+      "occupation": "A Professional Law Corporation",
+      "hasInfo": true,
+      "isGap": false,
+      "information": [
+        {
+          "id": 1,
+          "call": "19853025630",
+          "occupation": "Attorney (Adjunct Faculty & Private Practice)",
+          "experience": "Family Law, Personal Injury,  Civil Defense",
+          "practiceArea": "Family Law, Personal Injury",
+          "dateOfBirth": "NAN",
+          "email": "NAN",
+          "phone": "NAN"
+        }
+      ],
+      "about": [
+        {
+          "id": 1,
+          "title": "Know more about me!",
+          "desc": "Jazmine is a California native, but South Louisiana and St. Tammany Parish are home. She lived in Abita Springs as a teenager and attended Junior High and High School on the Northshore. After several years of living and practicing away from home, she moved back to the Northshore in 2020 and is loving practicing law in her hometown. Having moved around quite a bit as a child, including living in Puerto Rico for some of her childhood, Jazmine truly values culture, diversity, nature, and the outdoors. Jazmine is no stranger to hard work, either. Having been raised by a single mother of four children, all of whom have obtained college degrees, she learned the value of hard work and relentlessly pursuing goals. Her diverse background and unique life experiences translate into her work as an attorney and her personal life. She has managed heavy caseloads with impeccable work ethic while staying actively involved in her local bar association, church, and community.",
+          "descTwo": "After graduating Southern University Law Center in 2015, where she served as the Student Bar Association President for the evening division for two years, Jazmine clerked for the Honorable Penelope Richard at the 38th JDC in Cameron Parish. She also worked as a bar prep mentor, mentoring law graduates and assisting them in preparation for the bar exam. She went on to work for the Louisiana Attorney General’s office as an Assistant Attorney General, where she practiced civil defense litigation.",
+          "descThree": "She is an experienced attorney with a demonstrated history of family law, personal injury and business/commercial litigation. She is also skilled in litigation, workers’ compensation, civil defense, mediations, general torts litigation, subrogation and interventions, and premises liability.  Jazmine has successfully prosecuted suits and reached favorable outcomes for her clients. She has also defended her clients through trial and has obtained several dismissals and favorable judgments on behalf of her clients. She has successfully negotiated many settlements and has successfully recovered money on behalf of her clients in personal injury suits, subrogation, and intervention suits.",
+          "descFour": "She also works for Mitchel Hamline School of Law as adjunct faculty, tutoring students both academically and in preparation for their respective bar exams.",
+          "highlightedText": "JOSHUA D. ALLISON, A Professional Law Corporation",
+          "additionalInfo": ", and is also the lead litigation attorney in all of the law firm’s areas of practice. His mission is to provide exceptional representation to all of his clients. This only comes by virtue of aggressive advocacy, client responsiveness, and adherence to the highest standards of professionalism and ethics at all times.",
+          "tab": [
+            {
+              "tab": "mission",
+              "isActive": true,
+              "desc": "Josh is a native and life-long resident of southeast Louisiana having grown up in beautiful St. Bernard Parish while attending school in New Orleans. He then attended Southeastern Louisiana University in Hammond, Louisiana on multiple academic scholarships and",
+              "highlightedText": "graduated in 2009 with a Bachelors of Arts Degree",
+              "additionalText": " majoring in political science and minoring in history.",
+              "list": [
+                {
+                  "text": "Contractual Disputes and Breaches"
+                },
+                {
+                  "text": "Telecommunication Contracts"
+                }
+              ]
+            },
+            {
+              "tab": "vision",
+              "isActive": false,
+              "desc": "Josh is a native and life-long resident of southeast Louisiana having grown up in beautiful St. Bernard Parish while attending school in New Orleans. He then attended Southeastern Louisiana University in Hammond, Louisiana on multiple academic scholarships and",
+              "highlightedText": "graduated in 2009 with a Bachelors of Arts Degree",
+              "additionalText": " majoring in political science and minoring in history.",
+              "list": [
+                {
+                  "text": "Contractual Disputes and Breaches"
+                },
+                {
+                  "text": "Telecommunication Contracts"
+                }
+              ]
+            },
+            {
+              "tab": "approach",
+              "isActive": false,
+              "desc": "Josh is a native and life-long resident of southeast Louisiana having grown up in beautiful St. Bernard Parish while attending school in New Orleans. He then attended Southeastern Louisiana University in Hammond, Louisiana on multiple academic scholarships and",
+              "highlightedText": "graduated in 2009 with a Bachelors of Arts Degree",
+              "additionalText": " majoring in political science and minoring in history.",
+              "list": [
+                {
+                  "text": "Contractual Disputes and Breaches"
+                },
+                {
+                  "text": "Telecommunication Contracts"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "img": "/images/team/team-3.png",
+      "name": "Dianne Bentel",
+      "text": "Paralegal",
+      "occupation": "A Professional Law Corporation",
+      "hasInfo": false,
+      "isGap": false,
+      "information": [
+        {
+          "id": 1,
+          "occupation": "Owner & Managing Attorney",
+          "experience": "Business, Family, Personal Injury Law",
+          "practiceArea": "Business, Family, Personal Injury Law",
+          "dateOfBirth": "1976 in Mid-City New Orleans",
+          "email": "joshuad.allison@gmail.com",
+          "phone": "+2 654 258 4568"
+        }
+      ],
+      "about": [
+        {
+          "id": 1,
+          "title": "Know more about me!",
+          "desc": "Joshua Josh D. Allison is the owner and managing attorney of",
+          "descTwo": "Josh is a native and life-long resident of southeast Louisiana having grown up in beautiful St. Bernard Parish while attending school in New Orleans.  He then attended Southeastern Louisiana University in Hammond, Louisiana on multiple academic scholarships and graduated in 2009 with a Bachelors of Arts Degree majoring in political science and minoring in history.  Josh then attended Loyola College of Law in historic Uptown New Orleans, graduating in 2014 with his Juris Doctor in Civil Law as well as a Certificate in International Law.",
+          "descThree": "While in law school, Josh was elected by his fellow students to the Honor Board, a student-led organization responsible for administering Loyola's ethics code among the student body.  Also while in law school, he was honored to successfully represent both the Loyola College of Law and the City of New Orleans as a competing oralist in the world's largest and most prestigious moot court competition, the Philip C. Jessup International Law Moot Court Competition.  After several months of hard work and preparation, Josh and his team took first place at the national regional level and then advanced to the international competition in Washington D.C. as one of only twelve teams representing the United States against over 100 law schools from around the world, a very proud first for the Loyola College of Law.",
+          "highlightedText": "JOSHUA D. ALLISON, A Professional Law Corporation",
+          "additionalInfo": ", and is also the lead litigation attorney in all of the law firm’s areas of practice. His mission is to provide exceptional representation to all of his clients. This only comes by virtue of aggressive advocacy, client responsiveness, and adherence to the highest standards of professionalism and ethics at all times.",
+          "tab": [
+            {
+              "tab": "mission",
+              "isActive": true,
+              "desc": "Josh is a native and life-long resident of southeast Louisiana having grown up in beautiful St. Bernard Parish while attending school in New Orleans. He then attended Southeastern Louisiana University in Hammond, Louisiana on multiple academic scholarships and",
+              "highlightedText": "graduated in 2009 with a Bachelors of Arts Degree",
+              "additionalText": " majoring in political science and minoring in history.",
+              "list": [
+                {
+                  "text": "Contractual Disputes and Breaches"
+                },
+                {
+                  "text": "Telecommunication Contracts"
+                }
+              ]
+            },
+            {
+              "tab": "vision",
+              "isActive": false,
+              "desc": "Josh is a native and life-long resident of southeast Louisiana having grown up in beautiful St. Bernard Parish while attending school in New Orleans. He then attended Southeastern Louisiana University in Hammond, Louisiana on multiple academic scholarships and",
+              "highlightedText": "graduated in 2009 with a Bachelors of Arts Degree",
+              "additionalText": " majoring in political science and minoring in history.",
+              "list": [
+                {
+                  "text": "Contractual Disputes and Breaches"
+                },
+                {
+                  "text": "Telecommunication Contracts"
+                }
+              ]
+            },
+            {
+              "tab": "approach",
+              "isActive": false,
+              "desc": "Josh is a native and life-long resident of southeast Louisiana having grown up in beautiful St. Bernard Parish while attending school in New Orleans. He then attended Southeastern Louisiana University in Hammond, Louisiana on multiple academic scholarships and",
+              "highlightedText": "graduated in 2009 with a Bachelors of Arts Degree",
+              "additionalText": " majoring in political science and minoring in history.",
+              "list": [
+                {
+                  "text": "Contractual Disputes and Breaches"
+                },
+                {
+                  "text": "Telecommunication Contracts"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "img": "/images/team/team-4.png",
+      "name": "Jennifer Gaude",
+      "text": "Paralegal",
+      "occupation": "A Professional Law Corporation",
+      "hasInfo": false,
+      "isGap": false,
+      "information": [
+        {
+          "id": 1,
+          "occupation": "Owner & Managing Attorney",
+          "experience": "Business, Family, Personal Injury Law",
+          "practiceArea": "Business, Family, Personal Injury Law",
+          "dateOfBirth": "1976 in Mid-City New Orleans",
+          "email": "joshuad.allison@gmail.com",
+          "phone": "+2 654 258 4568"
+        }
+      ],
+      "about": [
+        {
+          "id": 1,
+          "title": "Know more about me!",
+          "desc": "Joshua Josh D. Allison is the owner and managing attorney of",
+          "highlightedText": "JOSHUA D. ALLISON, A Professional Law Corporation",
+          "descTwo": "Josh is a native and life-long resident of southeast Louisiana having grown up in beautiful St. Bernard Parish while attending school in New Orleans.  He then attended Southeastern Louisiana University in Hammond, Louisiana on multiple academic scholarships and graduated in 2009 with a Bachelors of Arts Degree majoring in political science and minoring in history.  Josh then attended Loyola College of Law in historic Uptown New Orleans, graduating in 2014 with his Juris Doctor in Civil Law as well as a Certificate in International Law.",
+          "descThree": "While in law school, Josh was elected by his fellow students to the Honor Board, a student-led organization responsible for administering Loyola's ethics code among the student body.  Also while in law school, he was honored to successfully represent both the Loyola College of Law and the City of New Orleans as a competing oralist in the world's largest and most prestigious moot court competition, the Philip C. Jessup International Law Moot Court Competition.  After several months of hard work and preparation, Josh and his team took first place at the national regional level and then advanced to the international competition in Washington D.C. as one of only twelve teams representing the United States against over 100 law schools from around the world, a very proud first for the Loyola College of Law.",
+          "additionalInfo": ", and is also the lead litigation attorney in all of the law firm’s areas of practice. His mission is to provide exceptional representation to all of his clients. This only comes by virtue of aggressive advocacy, client responsiveness, and adherence to the highest standards of professionalism and ethics at all times.",
+          "tab": [
+            {
+              "tab": "mission",
+              "isActive": true,
+              "desc": "Josh is a native and life-long resident of southeast Louisiana having grown up in beautiful St. Bernard Parish while attending school in New Orleans. He then attended Southeastern Louisiana University in Hammond, Louisiana on multiple academic scholarships and",
+              "highlightedText": "graduated in 2009 with a Bachelors of Arts Degree",
+              "additionalText": " majoring in political science and minoring in history.",
+              "list": [
+                {
+                  "text": "Contractual Disputes and Breaches"
+                },
+                {
+                  "text": "Telecommunication Contracts"
+                }
+              ]
+            },
+            {
+              "tab": "vision",
+              "isActive": false,
+              "desc": "Josh is a native and life-long resident of southeast Louisiana having grown up in beautiful St. Bernard Parish while attending school in New Orleans. He then attended Southeastern Louisiana University in Hammond, Louisiana on multiple academic scholarships and",
+              "highlightedText": "graduated in 2009 with a Bachelors of Arts Degree",
+              "additionalText": " majoring in political science and minoring in history.",
+              "list": [
+                {
+                  "text": "Contractual Disputes and Breaches"
+                },
+                {
+                  "text": "Telecommunication Contracts"
+                }
+              ]
+            },
+            {
+              "tab": "approach",
+              "isActive": false,
+              "desc": "Josh is a native and life-long resident of southeast Louisiana having grown up in beautiful St. Bernard Parish while attending school in New Orleans. He then attended Southeastern Louisiana University in Hammond, Louisiana on multiple academic scholarships and",
+              "highlightedText": "graduated in 2009 with a Bachelors of Arts Degree",
+              "additionalText": " majoring in political science and minoring in history.",
+              "list": [
+                {
+                  "text": "Contractual Disputes and Breaches"
+                },
+                {
+                  "text": "Telecommunication Contracts"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "img": "/images/team/team-5.png",
+      "name": "Tierra Jacob",
+      "text": "Paralegal",
+      "occupation": "A Professional Law Corporation",
+      "hasInfo": false,
+      "isGap": true,
+      "information": [
+        {
+          "id": 1,
+          "occupation": "Owner & Managing Attorney",
+          "experience": "Business, Family, Personal Injury Law",
+          "practiceArea": "Business, Family, Personal Injury Law",
+          "dateOfBirth": "1976 in Mid-City New Orleans",
+          "email": "joshuad.allison@gmail.com",
+          "phone": "+2 654 258 4568"
+        }
+      ],
+      "about": [
+        {
+          "id": 1,
+          "title": "Know more about me!",
+          "desc": "Joshua Josh D. Allison is the owner and managing attorney of",
+          "descTwo": "Josh is a native and life-long resident of southeast Louisiana having grown up in beautiful St. Bernard Parish while attending school in New Orleans.  He then attended Southeastern Louisiana University in Hammond, Louisiana on multiple academic scholarships and graduated in 2009 with a Bachelors of Arts Degree majoring in political science and minoring in history.  Josh then attended Loyola College of Law in historic Uptown New Orleans, graduating in 2014 with his Juris Doctor in Civil Law as well as a Certificate in International Law.",
+          "descThree": "While in law school, Josh was elected by his fellow students to the Honor Board, a student-led organization responsible for administering Loyola's ethics code among the student body.  Also while in law school, he was honored to successfully represent both the Loyola College of Law and the City of New Orleans as a competing oralist in the world's largest and most prestigious moot court competition, the Philip C. Jessup International Law Moot Court Competition.  After several months of hard work and preparation, Josh and his team took first place at the national regional level and then advanced to the international competition in Washington D.C. as one of only twelve teams representing the United States against over 100 law schools from around the world, a very proud first for the Loyola College of Law.",
+          "highlightedText": "JOSHUA D. ALLISON, A Professional Law Corporation",
+          "additionalInfo": ", and is also the lead litigation attorney in all of the law firm’s areas of practice. His mission is to provide exceptional representation to all of his clients. This only comes by virtue of aggressive advocacy, client responsiveness, and adherence to the highest standards of professionalism and ethics at all times.",
+          "tab": [
+            {
+              "tab": "mission",
+              "isActive": true,
+              "desc": "Josh is a native and life-long resident of southeast Louisiana having grown up in beautiful St. Bernard Parish while attending school in New Orleans. He then attended Southeastern Louisiana University in Hammond, Louisiana on multiple academic scholarships and",
+              "highlightedText": "graduated in 2009 with a Bachelors of Arts Degree",
+              "additionalText": " majoring in political science and minoring in history.",
+              "list": [
+                {
+                  "text": "Contractual Disputes and Breaches"
+                },
+                {
+                  "text": "Telecommunication Contracts"
+                }
+              ]
+            },
+            {
+              "tab": "vision",
+              "isActive": false,
+              "desc": "Josh is a native and life-long resident of southeast Louisiana having grown up in beautiful St. Bernard Parish while attending school in New Orleans. He then attended Southeastern Louisiana University in Hammond, Louisiana on multiple academic scholarships and",
+              "highlightedText": "graduated in 2009 with a Bachelors of Arts Degree",
+              "additionalText": " majoring in political science and minoring in history.",
+              "list": [
+                {
+                  "text": "Contractual Disputes and Breaches"
+                },
+                {
+                  "text": "Telecommunication Contracts"
+                }
+              ]
+            },
+            {
+              "tab": "approach",
+              "isActive": false,
+              "desc": "Josh is a native and life-long resident of southeast Louisiana having grown up in beautiful St. Bernard Parish while attending school in New Orleans. He then attended Southeastern Louisiana University in Hammond, Louisiana on multiple academic scholarships and",
+              "highlightedText": "graduated in 2009 with a Bachelors of Arts Degree",
+              "additionalText": " majoring in political science and minoring in history.",
+              "list": [
+                {
+                  "text": "Contractual Disputes and Breaches"
+                },
+                {
+                  "text": "Telecommunication Contracts"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "testimonial": [
+    {
+      "img": "/images/team/testimonila-1.png",
+      "desc": "“We believe exceptional representation is achieved only through aggressive advocacy client and adherence to the absolute highest standards of professionalism and ethics”",
+      "name": "Sarah Mitchell"
+    },
+    {
+      "img": "/images/team/testimonila-2.png",
+      "desc": "“True legal excellence comes from dedicated advocacy and unwavering commitment to ethical every standards—ensuring client receives the highest level of representation.”",
+      "name": "David Reynolds"
+    },
+    {
+      "img": "/images/team/testimonila-3.png",
+      "desc": "“Trustworthy and dedicated! Their strategic approach and attention to detail made all the difference in my legal matter. Highly recommend!”",
+      "name": "Adam Williams"
+    }
+  ]
+}

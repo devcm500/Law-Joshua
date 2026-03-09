@@ -1,0 +1,31 @@
+{
+  "contact": [
+    {
+      "title": "Covington Office",
+      "phone": "(985) 302-5630",
+      "call": "+9853025630",
+      "email": "frontdesk@allisonlawcorp.com",
+      "address": "207 E. Gibson St. Covington, LA 70433",
+      "mapSrc": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3438.5924005415!2d-90.10067272298355!3d30.475981074709274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86275c4eaaa3d743%3A0x158706c76ed2601f!2s207%20E%20Gibson%20St%2C%20Covington%2C%20LA%2070433%2C%20USA!5e0!3m2!1sen!2sbd!4v1742186521226!5m2!1sen!2sbd",
+      "shape": false
+    },
+    {
+      "title": "Madisonville Office",
+      "phone": "(985) 302-5630",
+      "call": "+9853025630",
+      "email": "frontdesk@allisonlawcorp.com",
+      "address": "506 Water St. Madisonville, LA 70447",
+      "mapSrc": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3441.087019359458!2d-90.15842292450643!3d30.40527287474394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x862744cee85bb76f%3A0x417f6a6e38df82cb!2s506%20Water%20St%2C%20Madisonville%2C%20LA%2070447%2C%20USA!5e0!3m2!1sen!2sbd!4v1742186874171!5m2!1sen!2sbd",
+      "shape": true
+    },
+    {
+      "title": "Franklinton Office",
+      "phone": "(985) 302-5630",
+      "call": "+9853025630",
+      "email": "frontdesk@allisonlawcorp.com",
+      "address": "1203 Main St. Franklinton, LA 70438",
+      "mapSrc": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3425.583951546629!2d-90.15557872448903!3d30.842321974531636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8627777c41e59719%3A0x700f535060489623!2s1203%20Main%20St%2C%20Franklinton%2C%20LA%2070438%2C%20USA!5e0!3m2!1sen!2sbd!4v1742186902944!5m2!1sen!2sbd",
+      "shape": false
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "address": [
+    {
+      "iClass": "fa-regular fa-location-dot icon-circle",
+      "text": "Covington Office",
+      "desc": "207 E. Gibson St., Covington, Louisiana 70433"
+    },
+    {
+      "iClass": "fa-regular fa-location-dot icon-circle",
+      "text": "Madisonville Office",
+      "desc": "506 Water St., Madisonville, Louisiana 70447"
+    },
+    {
+      "iClass": "fa-regular fa-location-dot icon-circle",
+      "text": "Franklinton Office",
+      "desc": "1203 Main Street, Franklinton, Louisiana 70438"
+    }
+  ],
+  "contact": [
+    {
+      "text": "Telephone:",
+      "call": "+9853025630",
+      "number": "(985) 302-5630"
+    },
+    {
+      "text": "Facsimile:",
+      "call": "+9853025631",
+      "number": "(985) 302-5631"
+    },
+    {
+      "text": "Email:",
+      "mail": "frontdesk@allisonlawcop.com"
+    }
+  ]
+}

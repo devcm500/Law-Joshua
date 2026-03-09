@@ -1,0 +1,490 @@
+{
+  "studies": [
+    {
+      "id": 1,
+      "title": "Family Law – Child Custody Battle",
+      "desc": "Our client, a mother of two, was facing a challenging custody battle after her ex-spouse filed for full custody, citing financial instability. The case was emotionally charged, with concerns about the children's well-being at the forefront.",
+      "tab": "family",
+      "isActive": true,
+      "img": "/images/card/card-img-2.png",
+      "list": [
+        {
+          "text": "Gathered evidence proving our client’s ability to provide a stable and nurturing home."
+        },
+        {
+          "text": "Presented school records and psychological evaluations highlighting the children’s preference and well-being with the mother."
+        },
+        {
+          "text": "Argued that the ex-spouse’s demanding work schedule made full custody impractical."
+        }
+      ],
+      "details": [
+        {
+          "title": "Family Law – Child Custody Battle",
+          "serial": 1,
+          "thumbImg": "/images/case-details/case-details-thumb-1.png",
+          "desc": "Our client, a mother of two, was facing a challenging custody battle after her ex-spouse filed for full custody, citing financial instability. The case was emotionally charged, with concerns about the children's well-being at the forefront. ",
+          "outcome": "The court ruled in favor of our client, granting her primary custody with fair visitation rights for the father. The decision ensured the children’s best interests were prioritized.",
+          "outcome_list": [
+            {
+              "text": "Gathered evidence proving our client’s ability to provide a stable and nurturing home."
+            },
+            {
+              "text": "Presented school records and psychological evaluations highlighting the children’s preference and well-being with the mother."
+            },
+            {
+              "text": "Argued that the ex-spouse’s demanding work schedule made full custody impractical."
+            }
+          ],
+          "work_process": [
+            {
+              "id": 1,
+              "title": "Types of Damages",
+              "desc": "Litigation law firm, we also regularly handle Conferences expedited proceedings."
+            },
+            {
+              "id": 2,
+              "title": "Types of Damages",
+              "desc": "Litigation law firm, we also regularly handle Conferences expedited proceedings."
+            },
+            {
+              "id": 3,
+              "title": "Types of Damages",
+              "desc": "Litigation law firm, we also regularly handle Conferences expedited proceedings."
+            }
+          ],
+          "card": [
+            {
+              "img": "/images/service/service-img-1.png",
+              "title": "Case Strategy ",
+              "desc": "Most importantly, our legal teams works closely with the client in order to accomplish a result specifically tailored to the client personal needs and preferences.",
+              "list": [
+                {
+                  "text": "Jurisdiction and venue issues"
+                },
+                {
+                  "text": "Prenuptial Agreements"
+                },
+                {
+                  "text": "Custody and Visitation"
+                },
+                {
+                  "text": "Grandparents Rights"
+                },
+                {
+                  "text": "Parental Alienation Cases"
+                },
+                {
+                  "text": "Restraining Orders"
+                },
+                {
+                  "text": "Contractual Disputes & Breaches"
+                },
+                {
+                  "text": "Divorce"
+                }
+              ]
+            }
+          ],
+          "benefits": [
+            {
+              "title": "Benefits",
+              "desc": "We are trusted advisors to individuals forced to navigate through the complex area of law known as family law which involves divorce, custody, support, community property, protective orders, etc.",
+              "list": [
+                {
+                  "text": "Visitation"
+                },
+                {
+                  "text": "Protective Orders"
+                },
+                {
+                  "text": "Community Property"
+                },
+                {
+                  "text": "Interdiction"
+                },
+                {
+                  "text": "General Advices"
+                },
+                {
+                  "text": "General Advices"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Criminal Law – Wrongful Accusation Defense",
+      "desc": "A young professional was falsely accused of theft at their workplace, facing criminal charges that could lead to a permanent criminal record and job loss. The evidence against them was circumstantial, but the prosecution was pushing for a conviction.",
+      "tab": "crime",
+      "isActive": false,
+      "img": "/images/card/card-img-5.png",
+      "list": [
+        {
+          "text": "Conducted a detailed investigation to uncover inconsistencies in the prosecution’s claims."
+        },
+        {
+          "text": "Secured surveillance footage proving our client was not at the scene when the theft occurred."
+        },
+        {
+          "text": "Cross-examined key witnesses to reveal contradictions in their testimonies."
+        }
+      ],
+      "details": [
+        {
+          "title": "Criminal Law – Wrongful Accusation Defense",
+          "serial": 2,
+          "thumbImg": "/images/case-details/case-details-thumb-2.png",
+          "desc": "A young professional was falsely accused of theft at their workplace, facing criminal charges that could lead to a permanent criminal record and job loss. The evidence against them was circumstantial, but the prosecution was pushing for a conviction.",
+          "outcome": "The case was dismissed due to lack of evidence, clearing our client’s name. They were reinstated at their job with no criminal record affecting their future.",
+          "outcome_list": [
+            {
+              "text": "Conducted a detailed investigation to uncover inconsistencies in the prosecution’s claims."
+            },
+            {
+              "text": "Secured surveillance footage proving our client was not at the scene when the theft occurred."
+            },
+            {
+              "text": "Cross-examined key witnesses to reveal contradictions in their testimonies."
+            }
+          ],
+          "work_process": [
+            {
+              "id": 1,
+              "title": "Types of Damages",
+              "desc": "Litigation law firm, we also regularly handle Conferences expedited proceedings."
+            },
+            {
+              "id": 2,
+              "title": "Types of Damages",
+              "desc": "Litigation law firm, we also regularly handle Conferences expedited proceedings."
+            },
+            {
+              "id": 3,
+              "title": "Types of Damages",
+              "desc": "Litigation law firm, we also regularly handle Conferences expedited proceedings."
+            }
+          ],
+          "card": [
+            {
+              "img": "/images/service/service-img-1.png",
+              "title": "Case Strategy ",
+              "desc": "Most importantly, our legal teams works closely with the client in order to accomplish a result specifically tailored to the client personal needs and preferences.",
+              "list": [
+                {
+                  "text": "Jurisdiction and venue issues"
+                },
+                {
+                  "text": "Prenuptial Agreements"
+                },
+                {
+                  "text": "Custody and Visitation"
+                },
+                {
+                  "text": "Grandparents Rights"
+                },
+                {
+                  "text": "Parental Alienation Cases"
+                },
+                {
+                  "text": "Restraining Orders"
+                },
+                {
+                  "text": "Contractual Disputes & Breaches"
+                },
+                {
+                  "text": "Divorce"
+                }
+              ]
+            }
+          ],
+          "benefits": [
+            {
+              "title": "Benefits",
+              "desc": "We are trusted advisors to individuals forced to navigate through the complex area of law known as family law which involves divorce, custody, support, community property, protective orders, etc.",
+              "list": [
+                {
+                  "text": "Visitation"
+                },
+                {
+                  "text": "Protective Orders"
+                },
+                {
+                  "text": "Community Property"
+                },
+                {
+                  "text": "Interdiction"
+                },
+                {
+                  "text": "General Advices"
+                },
+                {
+                  "text": "General Advices"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Business Law – Breach of Contract Dispute",
+      "desc": "Our client, a small business owner, was sued by a vendor for alleged breach of contract, demanding $500,000 in damages. The dispute threatened the company’s financial health and reputation.",
+      "tab": "business",
+      "img": "/images/card/card-img-1.png",
+      "isActive": false,
+      "list": [
+        {
+          "text": "Analyzed the contract and found loopholes proving the vendor had failed to meet their obligations first."
+        },
+        {
+          "text": "Provided documentation and email communications showing our client had acted in good faith."
+        },
+        {
+          "text": "Negotiated a settlement to avoid lengthy litigation while protecting our client’s business interests."
+        }
+      ],
+      "details": [
+        {
+          "title": "Business Law – Breach of Contract Dispute",
+          "serial": 3,
+          "thumbImg": "/images/case-details/case-details-thumb-3.png",
+          "desc": "Our client, a small business owner, was sued by a vendor for alleged breach of contract, demanding $500,000 in damages. The dispute threatened the company’s financial health and reputation. ",
+          "outcome": "The lawsuit was dropped after mediation, with our client paying no damages. Instead, the vendor agreed to a revised contract that benefited both parties.",
+          "outcome_list": [
+            {
+              "text": "Analyzed the contract and found loopholes proving the vendor had failed to meet their obligations first."
+            },
+            {
+              "text": "Provided documentation and email communications showing our client had acted in good faith."
+            },
+            {
+              "text": "Negotiated a settlement to avoid lengthy litigation while protecting our client’s business interests."
+            }
+          ],
+          "feature": [
+            {
+              "title": "Benefits",
+              "desc": "We are trusted advisors to individuals forced to navigate through the complex area of law known as family law which involves divorce, custody, support, community property, protective orders, etc.",
+              "list": [
+                {
+                  "text": "Visitation"
+                },
+                {
+                  "text": "Protective Orders"
+                },
+                {
+                  "text": "Community Property"
+                },
+                {
+                  "text": "Interdiction"
+                },
+                {
+                  "text": "General Advices"
+                },
+                {
+                  "text": "Child Abuse"
+                }
+              ]
+            }
+          ],
+          "work_process": [
+            {
+              "id": 1,
+              "title": "Types of Damages",
+              "desc": "Litigation law firm, we also regularly handle Conferences expedited proceedings."
+            },
+            {
+              "id": 2,
+              "title": "Types of Damages",
+              "desc": "Litigation law firm, we also regularly handle Conferences expedited proceedings."
+            },
+            {
+              "id": 3,
+              "title": "Types of Damages",
+              "desc": "Litigation law firm, we also regularly handle Conferences expedited proceedings."
+            }
+          ],
+          "card": [
+            {
+              "img": "/images/service/service-img-1.png",
+              "title": "Case Strategy ",
+              "desc": "Most importantly, our legal teams works closely with the client in order to accomplish a result specifically tailored to the client personal needs and preferences.",
+              "list": [
+                {
+                  "text": "Jurisdiction and venue issues"
+                },
+                {
+                  "text": "Prenuptial Agreements"
+                },
+                {
+                  "text": "Custody and Visitation"
+                },
+                {
+                  "text": "Grandparents Rights"
+                },
+                {
+                  "text": "Parental Alienation Cases"
+                },
+                {
+                  "text": "Restraining Orders"
+                },
+                {
+                  "text": "Contractual Disputes & Breaches"
+                },
+                {
+                  "text": "Divorce"
+                }
+              ]
+            }
+          ],
+          "benefits": [
+            {
+              "title": "Benefits",
+              "desc": "We are trusted advisors to individuals forced to navigate through the complex area of law known as family law which involves divorce, custody, support, community property, protective orders, etc.",
+              "list": [
+                {
+                  "text": "Visitation"
+                },
+                {
+                  "text": "Protective Orders"
+                },
+                {
+                  "text": "Community Property"
+                },
+                {
+                  "text": "Interdiction"
+                },
+                {
+                  "text": "General Advices"
+                },
+                {
+                  "text": "General Advices"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Injury Law – Workplace Injury Compensation",
+      "desc": "We believe exceptional representation is achieved through aggressive advocacy, client adherence to absolute highest standards of professionalism.",
+      "tab": "personal",
+      "isActive": false,
+      "img": "/images/card/card-img-3.png",
+      "list": [
+        {
+          "text": "Collected medical records and expert testimonies proving the extent of the injury."
+        },
+        {
+          "text": "Investigated safety violations at the job site, highlighting the employer’s negligence."
+        },
+        {
+          "text": "Negotiated aggressively with the insurance company while preparing for trial if necessary."
+        }
+      ],
+      "details": [
+        {
+          "title": "Injury Law – Workplace Injury Compensation",
+          "serial": 3,
+          "thumbImg": "/images/case-details/case-details-thumb-4.png",
+          "desc": "A construction worker suffered a severe spinal injury due to unsafe working conditions. The employer denied liability, and the worker’s compensation claim was initially rejected.",
+          "outcome": "Our client received a $750,000 settlement covering medical bills, lost wages, and future rehabilitation costs. The case also led to improved safety protocols at the workplace.",
+          "outcome_list": [
+            {
+              "text": "Collected medical records and expert testimonies proving the extent of the injury."
+            },
+            {
+              "text": "Investigated safety violations at the job site, highlighting the employer’s negligence."
+            },
+            {
+              "text": "Negotiated aggressively with the insurance company while preparing for trial if necessary."
+            }
+          ],
+          "work_process": [
+            {
+              "id": 1,
+              "title": "Types of Damages",
+              "desc": "Litigation law firm, we also regularly handle Conferences expedited proceedings."
+            },
+            {
+              "id": 2,
+              "title": "Types of Damages",
+              "desc": "Litigation law firm, we also regularly handle Conferences expedited proceedings."
+            },
+            {
+              "id": 3,
+              "title": "Types of Damages",
+              "desc": "Litigation law firm, we also regularly handle Conferences expedited proceedings."
+            }
+          ],
+          "card": [
+            {
+              "img": "/images/service/service-img-1.png",
+              "title": "Case Strategy ",
+              "desc": "Most importantly, our legal teams works closely with the client in order to accomplish a result specifically tailored to the client personal needs and preferences.",
+              "list": [
+                {
+                  "text": "Jurisdiction and venue issues"
+                },
+                {
+                  "text": "Prenuptial Agreements"
+                },
+                {
+                  "text": "Custody and Visitation"
+                },
+                {
+                  "text": "Grandparents Rights"
+                },
+                {
+                  "text": "Parental Alienation Cases"
+                },
+                {
+                  "text": "Restraining Orders"
+                },
+                {
+                  "text": "Contractual Disputes & Breaches"
+                },
+                {
+                  "text": "Divorce"
+                }
+              ]
+            }
+          ],
+          "benefits": [
+            {
+              "title": "Benefits",
+              "desc": "We are trusted advisors to individuals forced to navigate through the complex area of law known as family law which involves divorce, custody, support, community property, protective orders, etc.",
+              "list": [
+                {
+                  "text": "Visitation"
+                },
+                {
+                  "text": "Protective Orders"
+                },
+                {
+                  "text": "Community Property"
+                },
+                {
+                  "text": "Interdiction"
+                },
+                {
+                  "text": "General Advices"
+                },
+                {
+                  "text": "General Advices"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

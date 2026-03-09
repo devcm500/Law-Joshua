@@ -1,0 +1,39 @@
+{
+  "brand": [
+    {
+      "img": "/images/brand/brand-1.png",
+      "wdt": 107,
+      "ht": 113
+    },
+    {
+      "img": "/images/brand/brand-2.png",
+      "wdt": 120,
+      "ht": 113
+    },
+    {
+      "img": "/images/brand/brand-3.png",
+      "wdt": 170,
+      "ht": 120
+    },
+    {
+      "img": "/images/brand/brand-4.png",
+      "wdt": 100,
+      "ht": 102
+    },
+    {
+      "img": "/images/brand/brand-5.png",
+      "wdt": 107,
+      "ht": 102
+    },
+    {
+      "img": "/images/brand/brand-1.png",
+      "wdt": 107,
+      "ht": 113
+    },
+    {
+      "img": "/images/brand/brand-2.png",
+      "wdt": 120,
+      "ht": 113
+    }
+  ]
+}

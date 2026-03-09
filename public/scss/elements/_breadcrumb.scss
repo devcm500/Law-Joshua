@@ -1,0 +1,67 @@
+@use '../global' as *;
+
+.breadcrumb {
+    background-image: url(../../images/breadcrumb/breadcrumb.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0 360px 0;
+
+    @media #{$lg-device} {
+        padding: 60px 0 200px 0;
+    }
+
+    @media #{$sm-device} {
+        padding: 60px 0 100px 0;
+    }
+
+    @media #{$xs-device} {
+        padding: 16px 0 12px;
+        margin-bottom: 80px;
+    }
+
+    &-gap {
+        padding: 100px 0 !important;
+
+        @media #{$lg-device} {
+            padding: 60px 0 !important;
+        }
+    }
+
+    &-2 {
+        background: transparent !important;
+        padding: 80px 0 50px 0 !important;
+        margin: 0;
+
+        @media #{$lg-device} {
+            padding: 50px 0 40px !important;
+        }
+    }
+
+
+    &__text {
+        font-size: 24px;
+        @media #{$md-device} {
+            margin-bottom: 12px !important;
+        }
+        @media #{$sm-device} {
+            margin-bottom: 04px !important;
+        }
+    }
+
+    &__title {
+        font-size: 60px;
+
+        @media #{$lg-device} {
+            font-size: 35px;
+        }
+
+        @media #{$md-device} {
+            font-size: 40px;
+        }
+
+        @media #{$xs-device} {
+            font-size: 32px;
+        }
+    }
+}

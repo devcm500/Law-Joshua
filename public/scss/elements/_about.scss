@@ -1,0 +1,366 @@
+@use '../global' as *;
+
+.law {
+    &__about {
+        &-img {
+            position: relative;
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid rgba(from var(--color-secondary) r g b / .05);
+            z-index: 2;
+
+            img {
+                border-radius: 8px;
+            }
+            .bg-shape {
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 100%;
+                height: 100%;
+                z-index: -1;
+            }
+        }
+
+        &-head {
+            margin: 0 0 16px 0;
+            padding: 0 0 12px 0;
+            border-bottom: 1px solid rgba(from var(--color-secondary) r g b / .1);
+
+            li {
+                list-style: none;
+                position: relative;
+
+                &::after {
+                    position: absolute;
+                    content: "";
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 100%;
+                    left: 0;
+                    background: var(--color-primary);
+                    transform: translate(-50%, -50%);
+                    top: 50%;
+                }
+
+                span {
+                    color: var(--color-dark-100);
+                    font-size: 20px;
+                    font-weight: var(--fw-regular);
+                    line-height: 1.2;
+                    text-transform: capitalize;
+                    margin: 0 0 0 12px;
+                }
+            }
+        }
+
+        &-badge {
+            @media #{$sm-device} {
+                width: 60px;
+            }
+        }
+
+        &-desc {
+            color: var(--color-dark-100);
+            font-size: 20px;
+            font-weight: var(--fw-regular);
+            line-height: 1.6;
+            @media #{$sm-device} {
+                font-size: 16px;
+            }
+        }
+
+        &-desc-link {
+            text-decoration: underline !important;
+        }
+
+        &-brand {
+            padding: 24px 0;
+        }
+    }
+
+    &__about {
+        &.gap-y-100 {
+            padding: 100px 0;
+
+            @media #{$lg-device} {
+                padding: 60px 0;
+            }
+        }
+
+        .bg--light {
+            position: relative;
+            z-index: 3;
+
+            &::after {
+                position: absolute;
+                content: "";
+                width: 430.094px;
+                height: 94.747px;
+                transform: rotate(-126.105deg);
+                flex-shrink: 0;
+                background: var(--gradient-8);
+                filter: blur(80px);
+                bottom: 100px;
+                right: 18%;
+                z-index: -1;
+            }
+        }
+
+        &-tabs {
+            .nav-tabs {
+                margin: 36px 0 0 0;
+                gap: 36px;
+                border-bottom: 2px solid rgba(from var(--color-secondary) r g b / .1);
+
+                @media #{$xs-device} {
+                    gap: 14px;
+                    margin-top: 0;
+                }
+            }
+
+            .nav-link {
+                color: var(--color-dark-100);
+                font-size: 20px;
+                font-weight: var(--fw-bold);
+                line-height: 1;
+                border: 0 !important;
+                padding-left: 0;
+                padding-right: 0;
+
+                @media #{$xs-device} {
+                    font-size: 18px;
+                }
+
+                &.active {
+                    color: var(--color-primary);
+                    position: relative;
+
+                    &::before {
+                        position: absolute;
+                        content: "";
+                        width: 100%;
+                        height: 2px;
+                        background: var(--color-primary);
+                        border-radius: 10px;
+                        bottom: -1px;
+                        left: 0;
+                    }
+                }
+            }
+
+            &--desc {
+                color: var(--color-dark-100);
+                font-size: 20px;
+                font-weight: var(--fw-regular);
+                line-height: 1.6;
+                margin: 20px 0;
+
+                @media #{$sm-device} {
+                    font-size: 16px;
+                }
+            }
+
+            &--list {
+                ul {
+                    margin: 0;
+                    padding: 0;
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    row-gap: 16px;
+
+                    @media #{$xs-device} {
+                        grid-template-columns: repeat(1, 1fr);
+                    }
+
+                    li {
+                        margin: 0;
+                        list-style: none;
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+
+                        svg {
+                            background: var(--color-primary);
+                            width: 20px;
+                            height: 20px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            border-radius: 100%;
+                            padding: 3px;
+                        }
+                    }
+                }
+            }
+
+            &--text {
+                color: var(--color-dark-100);
+                font-size: 18px;
+                font-weight: var(--fw-regular);
+                line-height: 1.5;
+            }
+        }
+
+        &-card {
+            background: rgba(from var(--color-light) r g b / .34) !important;
+            border: 2px solid rgba(from var(--color-secondary) r g b / .02) !important;
+            backdrop-filter: blur(8px) !important;
+            padding: 0 32px 50px 32px !important;
+            height: 100%;
+
+            @media #{$lg-device} {
+                height: unset;
+            }
+
+            @media #{$sm-device} {
+                padding: 0 20px 30px !important;
+            }
+
+            &::before {
+                background: transparent !important;
+                opacity: 0 !important;
+            }
+
+            &--title {
+                font-size: 24px !important;
+                color: var(--color-secondary) !important;
+                @media #{$sm-device} {
+                    font-size: 20px !important;
+                }
+                @media #{$sm-device} {
+                    margin: 0 0 8px !important;
+                }
+            }
+
+            &--desc {
+                color: var(--color-dark-100) !important;
+                font-size: 18px !important;
+
+                @media #{$sm-device} {
+                    font-size: 14px !important;
+                }
+            }
+
+            &--wrap {
+                @media #{$xs-device} {
+                    padding: 0 20px 30px !important;
+                }
+
+                &::after {
+                    background: transparent !important;
+                }
+            }
+
+            &-num {
+                margin: 0 0 40px 0 !important;
+                background: transparent !important;
+                border: 0 !important;
+                position: relative;
+                width: auto !important;
+                height: auto !important;
+                justify-content: start !important;
+                z-index: 10;
+
+                @media #{$lg-device} {
+                    margin: 0 0 34px 0 !important;
+                }
+
+                @media #{$sm-device} {
+                    margin: 0 !important;
+                }
+
+                &--lg {
+                    margin: 0;
+                    position: absolute;
+                    display: flex;
+                    flex-wrap: nowrap;
+                    line-height: 1;
+                    top: -16px;
+                    left: 0;
+
+                    @media #{$lg-device} {
+                        top: 0px;
+                    }
+
+                    @media #{$xs-device} {
+                        top: 16px;
+                    }
+
+                    i {
+                        font-size: 100px;
+                        line-height: 1;
+                        bottom: 37px;
+                        position: absolute;
+                        left: 100%;
+                        opacity: .04;
+
+                        @media #{$sm-device} {
+                            font-size: 36px;
+                        }
+                    }
+
+                    .num-text {
+                        font-size: 210px;
+                        font-weight: 700;
+                        opacity: .04;
+                        line-height: 1;
+
+                        @media #{$lg-device} {
+                            font-size: 170px;
+                        }
+
+                        @media #{$sm-device} {
+                            font-size: 124px;
+                        }
+                        @media #{$xs-device} {
+                            font-size: 110px;
+                        }
+                    }
+
+                    img {
+                        height: fit-content !important;
+                        width: auto !important;
+                        left: 100%;
+                        position: absolute;
+                        bottom: 0;
+                        transform: translateY(50%);
+
+                        @media #{$md-device} {
+                            top: 0px;
+                            bottom: unset;
+                            max-width: 70px;
+                        }
+                    }
+                }
+
+                &--sm {
+                    margin-top: 32px;
+                    font-size: 86px;
+                    font-weight: 700;
+                    line-height: 1;
+                    color: var(--color-secondary);
+                    @media #{$sm-device} {
+                        font-size: 48px;
+                    }
+                }
+
+                &--i {
+                    font-size: 30px;
+                    position: absolute !important;
+                    right: -26px;
+                    bottom: 20px;
+                    @media #{$sm-device} {
+                       bottom: 8px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.odometer.odometer-auto-theme,
+.odometer.odometer-theme-default {
+    font-family: var(--font-primary);
+    line-height: 1.1;
+}

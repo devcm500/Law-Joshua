@@ -1,0 +1,296 @@
+@use '../global' as *;
+
+.team-details {
+    // margin: 116px 0 100px 0;
+
+    &--img {
+        border-radius: 8px;
+        max-height: 730px;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+
+        @media #{$md-device} {
+            max-height: auto !important;
+        }
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+
+        li {
+            margin: 0 0 16px 0;
+            list-style: none;
+            display: flex;
+            align-items: baseline;
+            gap: 24px;
+
+            @media #{$lg-device} {
+                margin: 0 0 12px 0;
+            }
+
+            @media #{$xs-device} {
+                display: grid;
+                gap: 0;
+            }
+
+            &:last-child {
+                margin: 0;
+            }
+        }
+    }
+
+    .information {
+        padding: 56px 36px;
+        background: var(--color-light);
+        border-radius: 8px;
+        width: 100%;
+
+        @media #{$xl-device} {
+            padding: 30px;
+        }
+
+        @media #{$md-device} {
+            margin: 24px auto 0 auto;
+            max-width: unset;
+            width: 100%;
+            padding: 30px 0 0 0;
+        }
+
+        &__text-sm {
+            color: var(--color-secondary);
+            font-size: 24px;
+            font-style: italic;
+            font-weight: 400;
+            line-height: 1;
+            letter-spacing: -0.24px;
+            margin: 0;
+
+            @media #{$lg-device} {
+                font-size: 18px;
+            }
+        }
+
+        &__title {
+            margin: 0;
+            color: var(--color-secondary);
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 1.3;
+            letter-spacing: -0.48px;
+            text-transform: uppercase;
+
+            @media #{$xl-device} {
+                font-size: 44px;
+            }
+
+            @media #{$lg-device} {
+                font-size: 28px;
+            }
+
+            @media #{$xs-device} {
+                font-size: 22px;
+            }
+        }
+
+        &__type {
+            margin: 16px 0;
+            color: var(--color-dark-100);
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 1.55;
+
+            @media #{$xs-device} {
+                font-size: 14px;
+            }
+        }
+
+        &__body {
+            padding: 24px 0;
+            border-top: 1px solid rgba(from var(--color-secondary) r g b / .15);
+            border-bottom: 1px solid rgba(from var(--color-secondary) r g b / .15);
+
+            @media #{$lg-device} {
+                padding: 16px 0;
+            }
+        }
+
+        &__bottom {
+            margin: 0;
+            display: flex;
+            align-items: center;
+            gap: 24px;
+            padding: 24px 0;
+            border-bottom: 1px solid rgba(from var(--color-secondary) r g b / .15);
+
+            &:last-child {
+                padding-bottom: 0;
+                border-bottom: 0;
+            }
+
+            @media #{$lg-device} {
+                margin: 16px 0 0 0;
+                padding-top: 0 !important;
+            }
+
+            @media #{$xs-device} {
+                display: grid;
+                gap: 10px;
+            }
+        }
+
+        &__text {
+            margin: 0;
+            color: var(--color-secondary);
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 1.75;
+            text-transform: uppercase;
+            display: inline-block;
+            max-width: 150px;
+            width: 100%;
+        }
+
+        &__subtext {
+            color: var(--color-dark-100);
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 1.55;
+
+            @media #{$sm-device} {
+                font-size: 16px;
+            }
+        }
+
+        &__social {
+            margin: 0;
+
+            li {
+                margin: 0;
+
+                a {
+                    color: var(--color-secondary);
+                    background: rgba(from var(--color-secondary) r g b / .2);
+                }
+            }
+        }
+
+        .banner__btn {
+            transition: var(--transition-2);
+
+            svg {
+                transition: var(--transition-2);
+            }
+
+            &:hover {
+                transform: translateY(-4px);
+
+                svg {
+                    transform: translateX(2px);
+                }
+            }
+        }
+    }
+
+    &__wrapper {
+        padding: 50px 0 0 50px !important;
+
+        @media #{$md-device} {
+            padding: 50px 0 0 0px !important;
+        }
+
+        &-title {
+            color: var(--color-secondary);
+            margin: 0 0 16px 0;
+        }
+
+        &--desc {
+            color: var(--color-dark-100);
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 1.6;
+
+            a {
+                color: var(--color-dark-100);
+
+                &:hover {
+                    color: var(--color-primary);
+                }
+            }
+        }
+
+        &--btn3d {
+            margin: 0;
+
+            svg {
+                @media #{$xs-device} {
+                    width: 18px;
+                }
+            }
+
+            .law-btn3d-icon-right {
+                right: 24% !important;
+
+                @media #{$xl-device} {
+                    right: 20% !important;
+                }
+
+                @media #{$lg-device} {
+                    right: 14% !important;
+                }
+
+                @media #{$xs-device} {
+                    right: 10% !important;
+                }
+            }
+
+            .law-btn3d-icon-left {
+                left: 21% !important;
+
+                @media #{$xl-device} {
+                    left: 16% !important;
+                }
+
+                @media #{$lg-device} {
+                    left: 10% !important;
+                }
+
+                @media #{$xs-device} {
+                    left: 4% !important;
+                    top: 16px;
+                }
+            }
+
+            .btn-text {
+                transform: translate(0, 2px);
+            }
+
+            .law-btn3d__text {
+                padding: 16px 165px !important;
+
+                @media #{$xl-device} {
+                    padding: 16px 124px !important;
+                }
+
+                @media #{$lg-device} {
+                    padding: 16px 80px !important;
+                }
+
+                @media #{$xs-device} {
+                    padding: 16px 45px !important;
+                }
+            }
+
+            .btn-text {
+                font-weight: 400;
+                font-size: 20px;
+                color: var(--color-secondary);
+
+                @media #{$xs-device} {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}

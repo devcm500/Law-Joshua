@@ -1,0 +1,154 @@
+{
+  "about": [
+    {
+      "text": "Northshore",
+      "title": "Meet Josh Allison",
+      "desc": "JOSHUA D. ALLISON, A Professional Law Corporation is a civil litigation law firm specializing in civil litigation and trial advocacy in the areas of business law, family law, and personal injury law. The law firm is owned and operated by Joshua Josh D. Allison with offices in historic",
+      "textLink": "Covington and Franklinton.",
+      "descTwo": "His mission is to provide exceptional representation to all of his clients. This only comes by virtue of aggressive advocacy client responsiveness, and adherence to the highest.",
+      "brandImg": "/images/brand/brand-6.png",
+      "signature": "/images/bg/signature.svg"
+    }
+  ],
+  "aboutTwo": [
+    {
+      "desc": "We believe exceptional representation is achieved only through aggressive advocacy, client responsiveness",
+      "tab": "mission",
+      "tabTitle": "Our Mission",
+      "isActive": true,
+      "list": [
+        {
+          "text": "Client-focused service"
+        },
+        {
+          "text": "Ethical excellence"
+        }
+      ]
+    },
+    {
+      "desc": "To be a trusted leader in civil litigation and trial advocacy.",
+      "tab": "vision",
+      "tabTitle": "Our Vision",
+      "isActive": false,
+      "list": [
+        {
+          "text": "Unwavering integrity"
+        },
+        {
+          "text": "Legal innovation"
+        }
+      ]
+    },
+    {
+      "desc": "Assertive, strategic, and client-centered litigation for effective legal solutions.",
+      "tab": "approach",
+      "tabTitle": "Approach",
+      "isActive": false,
+      "list": []
+    }
+  ],
+  "aboutCard": [
+    {
+      "num": "26",
+      "iClass": "fa-solid fa-plus",
+      "counterIcon": "/images/icons/counter-icon-01.png",
+      "counterIconHeight": 74,
+      "counterIconWidth": 146,
+      "title": "Years of Experience",
+      "desc": "With 26 Years of experience in the legal field, I have successfully handled a wide range of cases.",
+      "isSpace": false
+    },
+    {
+      "num": "99",
+      "iClass": "fa-solid fa-percent",
+      "counterIcon": "/images/icons/counter-icon-02.png",
+      "counterIconHeight": 86,
+      "counterIconWidth": 111,
+      "title": "Success Rate",
+      "desc": "I have represented clients in complex legal matters, ensuring their rights and interests.",
+      "isSpace": true
+    },
+    {
+      "num": "30",
+      "iClass": "fa-solid fa-plus",
+      "counterIcon": "/images/icons/counter-icon-03.png",
+      "counterIconHeight": 90,
+      "counterIconWidth": 90,
+      "title": "Awards Won",
+      "desc": "Recognized for excellence in the legal field, I have received several prestigious awards and legal innovation.",
+      "isSpace": false
+    }
+  ],
+  "studies": [
+    {
+      "title": "Winning an Employment Discrimination Case",
+      "desc": "We believe exceptional representation is achieved through aggressive advocacy, client adherence to absolute highest standards of professionalism.",
+      "tab": "family",
+      "isActive": true,
+      "list": [
+        {
+          "text": "Contractual Disputes and Breaches"
+        },
+        {
+          "text": "Telecommunication Contracts"
+        }
+      ]
+    },
+    {
+      "title": "Winning an Employment Discrimination Case",
+      "desc": "We believe exceptional representation is achieved through aggressive advocacy, client adherence to absolute highest standards of professionalism.",
+      "tab": "family",
+      "isActive": false,
+      "list": [
+        {
+          "text": "Contractual Disputes and Breaches"
+        },
+        {
+          "text": "Telecommunication Contracts"
+        }
+      ]
+    },
+    {
+      "title": "Winning an Employment Discrimination Case",
+      "desc": "We believe exceptional representation is achieved through aggressive advocacy, client adherence to absolute highest standards of professionalism.",
+      "tab": "business",
+      "isActive": false,
+      "list": [
+        {
+          "text": "Contractual Disputes and Breaches"
+        },
+        {
+          "text": "Telecommunication Contracts"
+        }
+      ]
+    },
+    {
+      "title": "Winning an Employment Discrimination Case",
+      "desc": "We believe exceptional representation is achieved through aggressive advocacy, client adherence to absolute highest standards of professionalism.",
+      "tab": "crime",
+      "isActive": false,
+      "list": [
+        {
+          "text": "Contractual Disputes and Breaches"
+        },
+        {
+          "text": "Telecommunication Contracts"
+        }
+      ]
+    },
+    {
+      "title": "Winning an Employment Discrimination Case",
+      "desc": "We believe exceptional representation is achieved through aggressive advocacy, client adherence to absolute highest standards of professionalism.",
+      "tab": "personal",
+      "isActive": false,
+      "list": [
+        {
+          "text": "Contractual Disputes and Breaches"
+        },
+        {
+          "text": "Telecommunication Contracts"
+        }
+      ]
+    }
+  ]
+}

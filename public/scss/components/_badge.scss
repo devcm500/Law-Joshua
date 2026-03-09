@@ -1,0 +1,55 @@
+@use "../global" as *;
+
+/*------------------
+Badge 
+-------------------*/
+
+.law-badge {
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 22px;
+    font-size: 14px;
+    letter-spacing: 0.3px;
+}
+
+.law-badge-2 {
+    background-color: transparent;
+    background: transparent;
+    padding: 1px 10px;
+    border-radius: 100px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+    letter-spacing: 0.5px;
+
+    &::before {
+        background: linear-gradient(90deg, var(--color-primary) 15%, var(--color-secondary) 45%, var(--color-secondary) 75%, var(--color-primary) 100%) 95%/200% 100%;
+        content: "";
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        position: absolute;
+        z-index: -1;
+        border-radius: 100px;
+        opacity: 0.5;
+        background-size: 400% 100%;
+    }
+
+
+    &.variation-02 {
+        padding: 0 16px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 12px;
+        letter-spacing: 0.5px;
+    }
+
+    &.variation-03 {
+        padding: 0 12px;
+    }
+}
