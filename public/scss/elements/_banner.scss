@@ -10,6 +10,7 @@
         background-position: center;
 
     }
+
     &__body {
         padding: 170px 0 100px 0;
         max-width: 2560px;
@@ -27,7 +28,7 @@
             z-index: 1;
         }
 
-        @media #{$xxl-device-only} {
+        @media #{$xxxl-device-only} {
             min-height: 833px;
             max-height: 833px;
         }
@@ -35,6 +36,7 @@
         @media #{$xxl-device} {
             padding: 120px 0 80px 0;
         }
+
         @media #{$xl-device} {
             padding: 75px 0 80px 0;
         }
@@ -56,6 +58,7 @@
     &__content {
         position: relative;
         z-index: 1;
+
         @media #{$xxl-device} {
             margin-right: -10px;
             max-width: 880px;
@@ -63,10 +66,12 @@
 
         &-width {
             margin-right: -124px !important;
+
             @media #{$xxl-device} {
                 margin-right: -10px !important;
                 max-width: 65%;
             }
+
             @media #{$sm-device} {
                 margin-right: 0 !important;
                 max-width: 100%;
@@ -84,8 +89,11 @@
             height: auto;
         }
 
-        @media #{$xxl-device-only} {
+        @media #{$xxxl-device-only} {
             max-width: auto;
+        }
+        @media #{$xxxl-device} {
+            max-width: 640px;
         }
 
         @media #{$xxl-device} {
@@ -164,18 +172,29 @@
             max-width: 90%;
         }
 
+        @media #{$xxxl-device} {
+            max-width: 80%;
+        }
+
         @media #{$lg-device} {
             margin-top: 20px;
             max-width: 90%;
         }
+
         @media #{$md-device} {
             margin-top: 15px;
         }
     }
+
     &__content-img-top {
         @media #{$xxl-device} {
             max-width: 75%;
         }
+
+        @media #{$xxxl-device} {
+            max-width: 75%;
+        }
+
         @media #{$lg-device} {
             max-width: 75%;
         }
@@ -190,6 +209,10 @@
         line-height: 1.12;
         margin-top: 50px;
 
+        @media #{$xxxl-device} {
+            font-size: 45px;
+        }
+
         @media #{$xxl-device} {
             font-size: 40px;
         }
@@ -198,6 +221,7 @@
             font-size: 35px;
             margin-top: 30px;
         }
+
         @media #{$lg-device} {
             font-size: 30px;
             margin-top: 20px;

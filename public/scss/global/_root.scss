@@ -24,7 +24,7 @@
 :root {
     --font-primary: "Spectral", serif;
     --font-secondary: "Times New Roman", serif;
-    
+
     --font-awesome: "Font Awesome 6 Pro";
 
     // Heading Font 
@@ -86,6 +86,8 @@
 }
 
 // Breakpoints
+$xxxl-device-only: 'only screen and (min-width: 1920px)';
+$xxxl-device: 'only screen and (max-width: 1919px)';
 $xxl-device: 'only screen and (max-width: 1599px)';
 $xl-device: 'only screen and (max-width: 1399px)';
 $lg-device: 'only screen and (max-width: 1199px)';
@@ -97,4 +99,3 @@ $xxs-device: 'only screen and (max-width: 479px)';
 $xl-device-only: 'only screen and (min-width: 1200px) and (max-width: 1599px)';
 $lg-device-only: 'only screen and (min-width: 992px) and (max-width: 1199px)';
 $md-device-only: 'only screen and (min-width: 768px) and (max-width: 991px)';
-$xxl-device-only: 'only screen and (min-width: 1920px)';
