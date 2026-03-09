@@ -17,7 +17,7 @@
     "contentful-management": "^11.48.0",
     "date-fns": "^4.1.0",
     "dayjs": "^1.11.13",
-    "next": "15.2.0",
+    "next": "15.2.8",
     "next-share": "^0.27.0",
     "react": "^19.0.0",
     "react-scroll": "^1.9.0",
