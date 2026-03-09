@@ -17,7 +17,7 @@
     "contentful-management": "^11.48.0",
     "date-fns": "^4.1.0",
     "dayjs": "^1.11.13",
-    "next": "15.2.0",
+    "next": "15.2.4",
     "next-share": "^0.27.0",
     "react": "^19.0.0",
     "react-scroll": "^1.9.0",
@@ -30,6 +30,6 @@
   "devDependencies": {
     "@eslint/eslintrc": "^3",
     "eslint": "^9",
-    "eslint-config-next": "15.2.0"
+    "eslint-config-next": "15.2.4"
   }
 }
