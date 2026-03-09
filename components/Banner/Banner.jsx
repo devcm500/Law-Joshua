@@ -8,6 +8,7 @@ import sal from "sal.js";
 
 import Header from "../Header/Header";
 import bannerContentImg from "../../public/images/banner/banner-content.svg";
+import bannerContentImg2 from "../../public/images/banner/banner-content-top.svg";
 import bannerHeroImg from "../../public/images/banner/banner-hero.png";
 
 const Banner = () => {
@@ -26,14 +27,15 @@ const Banner = () => {
           <div className="container">
             <div className="row">
               <div
-                className="col-md-8 mx-auto me-0"
+                className="col-xxl-10 col-xl-9 col-md-8 mx-auto me-0 banner__content-width"
                 data-sal="fade"
                 data-sal-duration="700"
                 data-sal-delay="100"
               >
-                 <div className="banner__content">
-                  <h1 className="banner__title">Let freedom Ring </h1>
+                 <div className="banner__content text-center">
+                  {/* <h1 className="banner__title">Let freedom Ring </h1> */}
                   {/* <h1 className="banner__title">exceptional advocacy</h1> */}
+                  <Image className="banner__content-img-top" src={bannerContentImg2} alt="image" width={694} height={130} />
                   <Image
                     className="banner__content-img"
                     src={bannerContentImg}

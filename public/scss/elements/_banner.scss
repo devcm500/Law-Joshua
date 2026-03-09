@@ -1,12 +1,19 @@
 @use '../global' as *;
 
 .banner {
-    &__body {
-        padding: 170px 0 100px 0;
+
+    &__wrapper {
+        position: relative;
         background-image: url(../../images/banner/banner.webp);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
+
+    }
+    &__body {
+        padding: 170px 0 100px 0;
+        max-width: 2560px;
+        margin: 0 auto;
         position: relative;
 
         &::after {
@@ -28,13 +35,17 @@
         @media #{$xxl-device} {
             padding: 120px 0 80px 0;
         }
+        @media #{$xl-device} {
+            padding: 75px 0 80px 0;
+        }
 
         @media #{$lg-device} {
             aspect-ratio: auto;
+            padding: 120px 0 100px 0;
         }
 
         @media #{$md-device} {
-            padding: 80px 0 60px 0;
+            padding: 120px 0 100px 0;
         }
 
         @media #{$xs-device} {
@@ -45,6 +56,22 @@
     &__content {
         position: relative;
         z-index: 1;
+        @media #{$xxl-device} {
+            margin-right: -10px;
+            max-width: 880px;
+        }
+
+        &-width {
+            margin-right: -124px !important;
+            @media #{$xxl-device} {
+                margin-right: -10px !important;
+                max-width: 65%;
+            }
+            @media #{$sm-device} {
+                margin-right: 0 !important;
+                max-width: 100%;
+            }
+        }
     }
 
     &__hero-img {
@@ -62,15 +89,15 @@
         }
 
         @media #{$xxl-device} {
-            max-width: 600px;
+            max-width: 520px;
         }
 
         @media #{$xl-device} {
-            max-width: 500px;
+            max-width: 445px;
         }
 
         @media #{$lg-device} {
-            max-width: 500px;
+            max-width: 440px;
         }
 
         @media #{$md-device} {
@@ -78,10 +105,8 @@
         }
 
         @media #{$sm-device} {
-            max-width: 300px;
+            max-width: 270px;
             margin: 0 auto;
-            transform: translateX(-50%);
-            left: 50%;
         }
     }
 
@@ -135,8 +160,24 @@
     &__content-img {
         margin-top: 40px;
 
+        @media #{$xxl-device} {
+            max-width: 90%;
+        }
+
         @media #{$lg-device} {
             margin-top: 20px;
+            max-width: 90%;
+        }
+        @media #{$md-device} {
+            margin-top: 15px;
+        }
+    }
+    &__content-img-top {
+        @media #{$xxl-device} {
+            max-width: 75%;
+        }
+        @media #{$lg-device} {
+            max-width: 75%;
         }
     }
 
@@ -149,18 +190,27 @@
         line-height: 1.12;
         margin-top: 50px;
 
+        @media #{$xxl-device} {
+            font-size: 40px;
+        }
+
         @media #{$xl-device} {
             font-size: 35px;
             margin-top: 30px;
         }
+        @media #{$lg-device} {
+            font-size: 30px;
+            margin-top: 20px;
+        }
 
         @media #{$md-device} {
-            font-size: 25px;
+            font-size: 22px;
             margin-top: 20px;
         }
 
         @media #{$sm-device} {
-            font-size: 20px;
+            font-size: 16px;
+            margin-top: 15px;
         }
 
         &-span {

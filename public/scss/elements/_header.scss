@@ -3,6 +3,7 @@
 .law-header {
   border-bottom: none;
   position: relative;
+  background: var(--color-secondary);
   z-index: 1;
   &::after,
   &::before {
@@ -24,7 +25,8 @@
 .law-fullwidth-wrapper {
   padding-left: 100px;
   padding-right: 100px;
-  background: var(--color-secondary);
+  max-width: 2560px;
+  margin: 0 auto;
 
   @media #{$xxl-device} {
     padding-left: 40px;

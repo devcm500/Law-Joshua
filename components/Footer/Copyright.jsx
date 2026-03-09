@@ -7,7 +7,7 @@ const Copyright = () => {
     <div className="law__copyright">
       <div className="container">
         <div className="row text-center">
-          <h4 className="law__copyright-text">Copyright © 2025 <Link href="/">Allisonlawcorp</Link></h4>
+          <h4 className="law__copyright-text">Copyright © {new Date().getFullYear()} <Link href="/">Allisonlawcorp</Link></h4>
         </div>
       </div>
     </div>
