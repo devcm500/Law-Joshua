@@ -8,6 +8,8 @@ import BlogNavigation from "./BlogNavigation";
 import BlogsContent from "./BlogsContent";
 import Sidebar from "./Sidebar";
 import ShareComponent from "./ShareComponent";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faShareNodes } from "@fortawesome/pro-solid-svg-icons";
 
 const BlogDetails = ({ blog }) => {
   return (
@@ -32,7 +34,7 @@ const BlogDetails = ({ blog }) => {
                 </div>
                 <div className="blog-details__bottom-social flex-wrap d-flex gap-2 gap-lg-4">
                   <div className="d-flex blog-details__bottom-tag gap-2">
-                    <i className="fa-solid fa-share-nodes blog-details-social--i"></i>
+                    <FontAwesomeIcon icon={faShareNodes} className="blog-details-social--i" />  
                     <h4 className="blog-details__bottom-text">
                       Share this post:
                     </h4>

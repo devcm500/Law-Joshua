@@ -12,6 +12,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay } from "swiper/modules";
 
 import shape from "../../public/images/shape/card-shape-1.png";
+import { faStar } from "@fortawesome/pro-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Testimonial = () => {
   useEffect(() => {
@@ -77,19 +79,19 @@ const Testimonial = () => {
                       <div className="card-img-overlay">
                         <ul className="testimonial__card-star">
                           <li>
-                            <i className="fa-solid fa-star"></i>
+                            <FontAwesomeIcon icon={faStar} />
                           </li>
                           <li>
-                            <i className="fa-solid fa-star"></i>
+                            <FontAwesomeIcon icon={faStar} />
                           </li>
                           <li>
-                            <i className="fa-solid fa-star"></i>
+                            <FontAwesomeIcon icon={faStar} />
                           </li>
                           <li>
-                            <i className="fa-solid fa-star"></i>
+                            <FontAwesomeIcon icon={faStar} />
                           </li>
                           <li>
-                            <i className="fa-solid fa-star"></i>
+                            <FontAwesomeIcon icon={faStar} />
                           </li>
                         </ul>
                         <p className="testimonial__card-desc">{data.desc}</p>

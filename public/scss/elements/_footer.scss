@@ -189,7 +189,6 @@
                 @media #{$sm-device} {
                     font-size: 18px;
                 }
-
             }
             .icon-circle {
                 position: absolute;
@@ -351,4 +350,10 @@
            width: auto;
         }
     }
+}
+
+.footer-logo {
+    width: 100%;
+    height: auto;
+    max-width: 336px;
 }

@@ -6,7 +6,9 @@ import teamData from "../../data/team.json";
 import signature from "../../public/images/bg/signature.svg";
 
 import Brand from "../Brand/Brand";
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPlus } from "@fortawesome/pro-solid-svg-icons";
+  
 const TeamMemberPage = () => {
   return (
     <>
@@ -234,7 +236,7 @@ const TeamMemberPage = () => {
                               }
                               className="team__card-icon"
                             >
-                              <i className="fa-solid fa-plus"></i>
+                              <FontAwesomeIcon icon={faPlus} />
                             </Link>
                           </div>
                         ) : (

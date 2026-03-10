@@ -15,6 +15,8 @@ import {
 } from "swiper/modules";
 
 import SectionHead from "../Header/Section-Head";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowLeft, faArrowRight } from "@fortawesome/pro-solid-svg-icons";
 
 const Studies = () => {
   const swiperRef = useRef(null);
@@ -210,10 +212,10 @@ const Studies = () => {
               <div className="law-scrollbar law-scrollbar-style-one"></div>
               <div className="case__slider-button">
                 <button className="case__slider-btn case__slider-btn--prev">
-                  <i className="fa-solid fa-arrow-left"></i>
+                  <FontAwesomeIcon icon={faArrowLeft} />
                 </button>
                 <button className="case__slider-btn case__slider-btn--next">
-                  <i className="fa-solid fa-arrow-right"></i>
+                  <FontAwesomeIcon icon={faArrowRight} />
                 </button>
               </div>
             </div>

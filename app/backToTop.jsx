@@ -1,5 +1,7 @@
 "use client";
 
+import { faArrowUp } from "@fortawesome/pro-regular-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useEffect, useRef } from "react";
 
 const BackToTop = () => {
@@ -57,6 +59,7 @@ const BackToTop = () => {
       >
         <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
       </svg>
+      <FontAwesomeIcon icon={faArrowUp} className="law-backto-top-icon" />
     </div>
   );
 };

@@ -4,6 +4,8 @@ import Image from "next/image";
 
 import logoLight from "../../public/images/logo/logo-light.png";
 import Link from "next/link";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faXmark } from "@fortawesome/pro-regular-svg-icons";
 
 const MobileMenu = () => {
   return (
@@ -19,7 +21,7 @@ const MobileMenu = () => {
           <div>
             <div className="offcanvas-header">
               <h5 className="offcanvas-title" id="offcanvasExampleLabel">
-                <Image src={logoLight} width={200} height={50} alt="logo" />
+                <Image src={logoLight} width={600} height={110} alt="logo" className="header-logo-mobile" />
               </h5>
               <button
                 type="button"
@@ -27,7 +29,7 @@ const MobileMenu = () => {
                 data-bs-dismiss="offcanvas"
                 aria-label="Close"
               >
-                <i className="fa-regular fa-xmark"></i>
+                <FontAwesomeIcon icon={faXmark} />  
               </button>
             </div>
             <div className="offcanvas-body">

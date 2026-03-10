@@ -7,6 +7,8 @@ import Image from "next/image";
 import SectionHead from "../Header/Section-Head";
 
 import blogImg from "../../public/images/blog/blog-img-1.png";
+import { faArrowRight } from "@fortawesome/pro-regular-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const SearchResult = () => {
   return (
@@ -111,7 +113,7 @@ const SearchResult = () => {
                   </li>
                   <li className="d-flex align-items-center gap-1">
                     <span>next</span>
-                    <i className="fa-regular fa-arrow-right ps-1"></i>
+                    <FontAwesomeIcon className="ps-1" icon={faArrowRight} />  
                   </li>
                 </ul>
               </div>

@@ -1,4 +1,6 @@
 "use client";
+import { faFacebookF, faLinkedinIn, faTwitter } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   FacebookShareButton,
   InstapaperShareButton,
@@ -19,7 +21,7 @@ export default function ShareComponent2({ blog }) {
     <>
       <li>
         <LinkedinShareButton url={fullUrl}>
-          <i className="fa-brands fa-linkedin-in"></i>
+          <FontAwesomeIcon icon={faLinkedinIn} />  
         </LinkedinShareButton>
       </li>
       <li>
@@ -28,7 +30,7 @@ export default function ShareComponent2({ blog }) {
           quote={blog.title}
           hashtag={blog.tags ? blog.tags[0] : ""}
         >
-          <i className="fa-brands fa-facebook-f"></i>
+          <FontAwesomeIcon icon={faFacebookF} />  
         </FacebookShareButton>
       </li>
       <li>
@@ -37,7 +39,7 @@ export default function ShareComponent2({ blog }) {
           title={blog.title}
           hashtags={blog.tags}
         >
-          <i className="fa-brands fa-twitter"></i>
+          <FontAwesomeIcon icon={faTwitter} />  
         </TwitterShareButton>
       </li>
     </>

@@ -10,6 +10,8 @@ import logoLight from "../../public/images/logo/logo-light.png";
 
 import MobileMenu from "./MobileMenu";
 import NavList from "./NavList";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/pro-regular-svg-icons";
 
 const Header = ({ bgDark }) => {
   const router = useRouter();
@@ -69,10 +71,10 @@ const Header = ({ bgDark }) => {
               <div className="law-header-content">
                 <Link className="law-logo" href="/">
                   <Image
-                    className="img-fluid"
+                    className="img-fluid header-logo"
                     src={logoLight}
-                    width={300}
-                    height={50}
+                    width={600}
+                    height={110}
                     alt="logo"
                   />
                 </Link>
@@ -108,7 +110,7 @@ const Header = ({ bgDark }) => {
                 aria-controls="offcanvasExample"
                 onClick={() => setIsSticky(false)}
               >
-                <i className="fa-regular fa-bars"></i>
+                <FontAwesomeIcon icon={faBars} />  
               </button>
               <MobileMenu />
             </div>

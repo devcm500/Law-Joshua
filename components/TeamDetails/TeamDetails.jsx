@@ -5,6 +5,8 @@ import Image from "next/image";
 import { useParams, useRouter } from "next/navigation";
 
 import teamData from "../../data/team.json";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFacebookF, faLinkedin, faLinkedinIn, faYoutube } from "@fortawesome/free-brands-svg-icons";
 
 const TeamDetails = () => {
   const router = useRouter();
@@ -121,17 +123,17 @@ const TeamDetails = () => {
                         <ul className="law__social information__social">
                           <li>
                             <Link href="#">
-                              <i className="fa-brands fa-linkedin-in"></i>
+                              <FontAwesomeIcon icon={faLinkedinIn} />
                             </Link>
                           </li>
                           <li>
                             <Link href="#">
-                              <i className="fa-brands fa-facebook-f"></i>
+                              <FontAwesomeIcon icon={faFacebookF} />
                             </Link>
                           </li>
                           <li>
                             <Link href="#">
-                              <i className="fa-brands fa-youtube"></i>
+                              <FontAwesomeIcon icon={faYoutube} />
                             </Link>
                           </li>
                         </ul>

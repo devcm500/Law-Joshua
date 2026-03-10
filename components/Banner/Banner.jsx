@@ -35,7 +35,7 @@ const Banner = () => {
                  <div className="banner__content text-center">
                   {/* <h1 className="banner__title">Let freedom Ring </h1> */}
                   {/* <h1 className="banner__title">exceptional advocacy</h1> */}
-                  <Image className="banner__content-img-top" src={bannerContentImg2} alt="image" width={694} height={130} />
+                  <Image className="banner__content-img-top" src={bannerContentImg2} alt="image" width={711} height={139} />
                   <Image
                     className="banner__content-img"
                     src={bannerContentImg}
