@@ -144,7 +144,7 @@
     &__title {
         color: var(--color-white);
         text-align: center;
-        font-family: "American Scribe", var(--font-spectral, "Spectral"), serif;
+        font-family: var(--font-american-scribe, "American Scribe"), var(--font-spectral, "Spectral"), serif;
         font-size: 130px;
         font-style: normal;
         font-weight: 400;

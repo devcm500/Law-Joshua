@@ -1,4 +1,5 @@
 import { Spectral, Jost } from "next/font/google";
+import localFont from "next/font/local";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -37,9 +38,55 @@ const jost = Jost({
   display: "swap",
 });
 
+const timesNewRoman = localFont({
+  src: [
+    {
+      path: "../public/fonts/times-new-roman-regular.ttf",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../public/fonts/times-new-roman-regular-italic.ttf",
+      weight: "400",
+      style: "italic",
+    },
+    {
+      path: "../public/fonts/times-new-roman-bold.ttf",
+      weight: "700",
+      style: "normal",
+    },
+    {
+      path: "../public/fonts/times-new-roman-bold-italic.ttf",
+      weight: "700",
+      style: "italic",
+    },
+  ],
+  variable: "--font-times-new-roman",
+  display: "swap",
+});
+
+const americanScribe = localFont({
+  src: [
+    {
+      path: "../public/fonts/american-scribe.woff2",
+      weight: "400",
+      style: "normal",
+    },
+  ],
+  variable: "--font-american-scribe",
+  display: "swap",
+});
+
+const fontVariables = [
+  spectral.variable,
+  jost.variable,
+  timesNewRoman.variable,
+  americanScribe.variable,
+].join(" ");
+
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${spectral.variable} ${jost.variable}`}>
+    <html lang="en" className={fontVariables} suppressHydrationWarning>
       <body className="law-main" suppressHydrationWarning>
         <BootstrapClient />
         {children}
