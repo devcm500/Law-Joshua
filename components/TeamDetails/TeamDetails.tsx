@@ -126,11 +126,13 @@ const TeamDetails = () => {
                       <div className="information__bottom">
                         <h3 className="information__text">follow on:</h3>
                         <ul className="law__social information__social">
+                          {checkMatch.linkedin && (
                           <li>
-                            <Link href="#">
+                            <Link href={checkMatch.linkedin} target="_blank" rel="noopener noreferrer">
                               <FontAwesomeIcon icon={faLinkedinIn} />
                             </Link>
                           </li>
+                          )}
                           <li>
                             <Link href="#">
                               <FontAwesomeIcon icon={faFacebookF} />

@@ -28,7 +28,7 @@ const Testimonial = () => {
         <div className="container">
           <div className="row row--15 justify-content-end">
             <SectionHead title="Testimonials" />
-            <div className="col-md-9 col-lg-7 col-xl-6 ms-auto">
+            <div className="col-md-9 col-lg-7 col-xxl-6 ms-auto">
               <div
                 className="testimonial__head d-sm-flex align-items-center"
                 data-sal="slide-up"
@@ -52,7 +52,7 @@ const Testimonial = () => {
             data-sal-duration="700"
             data-sal-delay="200"
           >
-            <div className="col-md-9 col-lg-7 col-xl-6">
+            <div className="col-md-9 col-lg-7 col-xxl-6">
               <Swiper
                 className="testimonial__slider"
                 slidesPerView={1}

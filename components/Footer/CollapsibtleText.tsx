@@ -1,5 +1,7 @@
 import React from "react";
 import Link from "next/link";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronDown } from "@fortawesome/pro-regular-svg-icons";
 
 const CollapsibleText = () => {
   return (
@@ -9,6 +11,7 @@ const CollapsibleText = () => {
           <div className="law__footer-info-text-wrapper col-12">
             <Link className="collapse-title has-right-arrow" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
               The information on this website is for general information purposes only. Any information found on the Joshua D. Allison, A Professional Law Corporation
+              <FontAwesomeIcon icon={faChevronDown} className="chevron-down-icon" />
             </Link>
             <div className="collapse" id="collapseExample">
               <p className="colllapsible-text">

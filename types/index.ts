@@ -116,6 +116,7 @@ export interface TeamMember {
   descFour?: string;
   brandImg?: string;
   signature?: string;
+  linkedin?: string;
   information?: TeamInformation[];
   about: TeamAbout[];
 }

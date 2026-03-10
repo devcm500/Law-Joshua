@@ -292,7 +292,7 @@ const ServiceCard = () => {
           data-sal-delay="500"
         >
           <div className="card info-card--sm">
-            <h4 className="info-card--title m-0">Free Consulting for any case</h4>
+            <h4 className="info-card--title m-0">Consulting for any case</h4>
             <p className="info-card--desc">
               Joshua &quot;Josh&quot; D. Allison is the owner and managing
               attorney of JOSHUA D. ALLISON
@@ -300,7 +300,7 @@ const ServiceCard = () => {
 
             <div className="d-flex justify-content-center">
               <Link className="banner__btn info__btn" href="/contact">
-                Get In Touch
+                Book a Consultation
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="18"
