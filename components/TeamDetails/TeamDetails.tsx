@@ -36,7 +36,7 @@ const TeamDetails = () => {
       <div className="team-details section-space-top">
         <div className="container">
           <div className="row">
-            <div className="col-lg-6 text-center">
+            <div className="col-lg-5 text-center">
               {checkMatch && (
                 <div className="h-100">
                   {checkMatch.img ? (
@@ -53,7 +53,7 @@ const TeamDetails = () => {
               )}
             </div>
             {checkMatch && (
-              <div className="col-lg-6 d-flex justify-content-end">
+              <div className="col-lg-7 d-flex justify-content-end">
                 {checkMatch.information &&
                   checkMatch.information.map((childData, i) => (
                     <div
@@ -221,7 +221,7 @@ const TeamDetails = () => {
           </div>
 
           <div className="row">
-            <div className="col-md-11 col-xl-9 mx-auto mx-lg-0">
+            <div className="col-md-11 col-xl-11 mx-auto mx-lg-0">
               {checkMatch &&
                 checkMatch.about.map((innerData, i) => (
                   <div className="team-details__wrapper" key={i}>
