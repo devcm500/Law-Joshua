@@ -40,7 +40,7 @@ const jost = Jost({
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${spectral.variable} ${jost.variable}`}>
-      <body className="law-main">
+      <body className="law-main" suppressHydrationWarning>
         <BootstrapClient />
         {children}
       </body>
