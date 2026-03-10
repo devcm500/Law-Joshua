@@ -7,6 +7,7 @@ import Image from "next/image";
 import SectionHead from "../Header/Section-Head";
 
 import Pagination from "../comon/Pagination";
+import { faMagnifyingGlass } from "@fortawesome/pro-regular-svg-icons";
 
 const Archive = ({
   blogs,
@@ -59,7 +60,7 @@ const Archive = ({
                         type="text"
                         placeholder="Search.. crime, politics, business"
                       />
-                      <i className="fa-regular fa-magnifying-glass"></i>
+                      <FontAwesomeIcon icon={faMagnifyingGlass} />
                     </form>
                   </div>
                 )}

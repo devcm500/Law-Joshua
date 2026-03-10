@@ -187,6 +187,8 @@
     }
 
     &__content-img-top {
+        max-width: 694px;
+        height: auto;
         @media #{$xxl-device} {
             max-width: 75%;
         }

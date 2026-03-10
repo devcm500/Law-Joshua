@@ -7,6 +7,13 @@ import sal from "sal.js";
 import aboutData from "../../data/about.json";
 import lawOffice from "../../public/images/bg/law-office.png";
 import Counter from "./Counter";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPlus, faPercent } from "@fortawesome/pro-solid-svg-icons";
+
+const iconMap = {
+  faPlus,
+  faPercent,
+};
 
 const AboutTwo = () => {
   useEffect(() => {
@@ -172,7 +179,7 @@ const AboutTwo = () => {
                       <div className="d-flex align-items-end">
                         <span className="law__about-card-num--lg">
                           <span className="num-text">{data.num}</span>
-                          <i className={data.iClass}></i>
+                          <FontAwesomeIcon icon={iconMap[data.iClass]} />
                         </span>
                       </div>
                       <div className="d-flex align-items-end position-relative z-2">
@@ -181,7 +188,7 @@ const AboutTwo = () => {
                         </span>
 
                         <span className="law__about-card-num--i">
-                          <i className={data.iClass}></i>
+                          <FontAwesomeIcon icon={iconMap[data.iClass]} />
                         </span>
                       </div>
                     </div>

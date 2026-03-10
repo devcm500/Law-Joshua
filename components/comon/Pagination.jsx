@@ -3,6 +3,8 @@
 import Link from "next/link";
 import React from "react";
 import { usePathname, useSearchParams } from "next/navigation";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowLeft, faArrowRight } from "@fortawesome/pro-regular-svg-icons";
 
 const Pagination = ({ limit = 6, total }) => {
   const pathname = usePathname();
@@ -49,7 +51,7 @@ const Pagination = ({ limit = 6, total }) => {
           scroll={false}
           href={createPageLink(currentPage > 1 ? currentPage - 1 : currentPage)}
         >
-          <i className="fa-regular fa-arrow-left ps-1"></i> <span>prev</span>
+          <FontAwesomeIcon icon={faArrowLeft} className="ps-1" /> <span>prev</span>
         </Link>
       </li>
       {pages.map((page, index) =>
@@ -74,7 +76,7 @@ const Pagination = ({ limit = 6, total }) => {
             currentPage < pageLength ? currentPage + 1 : currentPage
           )}
         >
-          <span>next</span> <i className="fa-regular fa-arrow-right ps-1"></i>{" "}
+          <span>next</span> <FontAwesomeIcon icon={faArrowRight} className="ps-1" />{" "}
         </Link>
       </li>
     </>

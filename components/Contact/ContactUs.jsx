@@ -9,6 +9,8 @@ import SectionHead from "../Header/Section-Head";
 
 import contactImg from "../../public/images/contactus/contact-img-1.png";
 import ContactForm from "./ContactForm";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPhoneRotary, faEnvelope, faLocationDot } from "@fortawesome/pro-regular-svg-icons";
 
 const ContactUs = () => {
   return (
@@ -94,7 +96,7 @@ const ContactUs = () => {
 
                         <ul className="contactus__box contactus__card-wrap--box law__hoverlink">
                           <li>
-                            <i className="fa-regular fa-phone-rotary"></i>
+                            <FontAwesomeIcon icon={faPhoneRotary} />  
                             <Link href={`callto:${data.call}`}>
                               {data.phone}
                             </Link>
@@ -118,13 +120,13 @@ const ContactUs = () => {
                             </Link>
                           </li>
                           <li>
-                            <i className="fa-regular fa-envelope"></i>
+                            <FontAwesomeIcon icon={faEnvelope} />  
                             <Link href={`mailto:${data.email}`}>
                               {data.email}
                             </Link>
                           </li>
                           <li className="align-items-baseline">
-                            <i className="fa-regular fa-location-dot"></i>
+                            <FontAwesomeIcon icon={faLocationDot} />  
                             <span>{data.address}</span>
                           </li>
                         </ul>

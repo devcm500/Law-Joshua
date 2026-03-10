@@ -11,6 +11,8 @@ import { Scrollbar, Keyboard } from "swiper/modules";
 import teamData from "../../data/team.json";
 
 import SectionHead from "../Header/Section-Head";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPlus } from "@fortawesome/pro-solid-svg-icons";
 
 const Team = () => {
   useEffect(() => {
@@ -109,7 +111,7 @@ const Team = () => {
                                 }
                                 className="team__card-icon"
                               >
-                                <i className="fa-solid fa-plus"></i>
+                                <FontAwesomeIcon icon={faPlus} />
                               </Link>
                             </div>
                           ) : (

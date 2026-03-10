@@ -9,6 +9,12 @@ import Copyright from "./Copyright";
 import CollapsibleText from "./CollapsibtleText";
 
 import logoDark from "../../public/images/logo/logo-light.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLocationDot } from "@fortawesome/pro-regular-svg-icons";
+
+const iconMap = {
+  faLocationDot,
+};
 
 const Footer = () => {
   return (
@@ -19,10 +25,10 @@ const Footer = () => {
             <div className="col-md-6 col-lg-6 col-xl-4">
               <Link href="#">
                 <Image
-                  className="img-fluid"
+                  className="img-fluid footer-logo"
                   src={logoDark}
-                  width={336}
-                  height={56}
+                  width={600}
+                  height={110}
                   alt="logo"
                 />
               </Link>
@@ -105,7 +111,9 @@ const Footer = () => {
                 footerData.address.map((data, i) => (
                   <div className="col-12 col-md-6 col-lg-4 pr-sm-0 mt--24 mt-sm--12" key={i}>
                     <div className="law__footer-address">
-                      <i className={data.iClass}></i>
+                      <div className="icon-circle">
+                        <FontAwesomeIcon icon={iconMap[data.iClass]} className="icon-circle-icon" />
+                      </div>
                       <h4 className="law__footer-address--title">{data.text}</h4>
                       <p className="law__footer-address--desc">{data.desc}</p>
                     </div>
