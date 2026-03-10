@@ -50,7 +50,7 @@
   "aboutCard": [
     {
       "num": "26",
-      "iClass": "fa-solid fa-plus",
+      "iClass": "faPlus",
       "counterIcon": "/images/icons/counter-icon-01.png",
       "counterIconHeight": 74,
       "counterIconWidth": 146,
@@ -60,7 +60,7 @@
     },
     {
       "num": "99",
-      "iClass": "fa-solid fa-percent",
+      "iClass": "faPercent",
       "counterIcon": "/images/icons/counter-icon-02.png",
       "counterIconHeight": 86,
       "counterIconWidth": 111,
@@ -70,7 +70,7 @@
     },
     {
       "num": "30",
-      "iClass": "fa-solid fa-plus",
+      "iClass": "faPlus",
       "counterIcon": "/images/icons/counter-icon-03.png",
       "counterIconHeight": 90,
       "counterIconWidth": 90,

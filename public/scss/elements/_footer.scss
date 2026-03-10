@@ -189,7 +189,6 @@
                 @media #{$sm-device} {
                     font-size: 18px;
                 }
-
             }
             .icon-circle {
                 position: absolute;
@@ -322,9 +321,7 @@
         display: block;
         &.has-right-arrow{
             position: relative;
-            &::after{
-                content: "\f078";
-                font-family: "Font Awesome 6 Pro";
+            .chevron-down-icon{
                 font-weight: 900;
                 position: absolute;
                 right: 0;
@@ -333,14 +330,13 @@
                 line-height: 1;
                 transition: var(--transition-2);
             }
-            &[aria-expanded="true"]{
-                padding-bottom: 0;
-                &::after{
-                    transform: rotate(180deg);
-                }
+        }
+        &[aria-expanded="true"]{
+            padding-bottom: 0;
+            .chevron-down-icon{
+                transform: rotate(180deg);
             }
         }
-
     }
     .colllapsible-text{
         font-size: 16px;
@@ -351,4 +347,10 @@
            width: auto;
         }
     }
+}
+
+.footer-logo {
+    width: 100%;
+    height: auto;
+    max-width: 336px;
 }

@@ -1,17 +1,17 @@
 {
   "address": [
     {
-      "iClass": "fa-regular fa-location-dot icon-circle",
+      "iClass": "faLocationDot",
       "text": "Covington Office",
       "desc": "207 E. Gibson St., Covington, Louisiana 70433"
     },
     {
-      "iClass": "fa-regular fa-location-dot icon-circle",
+      "iClass": "faLocationDot",
       "text": "Madisonville Office",
       "desc": "506 Water St., Madisonville, Louisiana 70447"
     },
     {
-      "iClass": "fa-regular fa-location-dot icon-circle",
+      "iClass": "faLocationDot",
       "text": "Franklinton Office",
       "desc": "1203 Main Street, Franklinton, Louisiana 70438"
     }

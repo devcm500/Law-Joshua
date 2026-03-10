@@ -4,7 +4,7 @@
   border-bottom: none;
   position: relative;
   background: var(--color-secondary);
-  z-index: 1;
+  z-index: 999;
   &::after,
   &::before {
     content: "";
@@ -406,4 +406,14 @@
     //   border-color: rgba(255, 255, 255, 0.20);
     // }
   }
+}
+.header-logo {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+}
+.header-logo-mobile {
+    width: 100%;
+    height: auto;
+    max-width: 200px;
 }
