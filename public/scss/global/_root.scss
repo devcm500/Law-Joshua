@@ -22,7 +22,7 @@
 **********************************************/
 
 :root {
-    --font-primary: "Spectral", serif;
+    --font-primary: var(--font-spectral, "Spectral"), serif;
     --font-secondary: "Times New Roman", serif;
 
     --font-awesome: "Font Awesome 6 Pro";
