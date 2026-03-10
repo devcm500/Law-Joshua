@@ -12,7 +12,9 @@ import logoDark from "../../public/images/logo/logo-light.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLocationDot } from "@fortawesome/pro-regular-svg-icons";
 
-const iconMap = {
+import type { IconDefinition } from "@fortawesome/fontawesome-svg-core";
+
+const iconMap: Record<string, IconDefinition> = {
   faLocationDot,
 };
 

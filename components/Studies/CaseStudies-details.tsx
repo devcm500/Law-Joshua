@@ -11,7 +11,9 @@ import Breadcrumb from "../Service/Breadcrumb";
 const CaseStudiesDetails = () => {
   const router = useRouter();
   const params = useParams();
-  const getId = parseInt(params.slug);
+  const slug = params.slug as string | string[] | undefined;
+  const slugStr = Array.isArray(slug) ? slug[0] : slug ?? "";
+  const getId: number = parseInt(slugStr, 10);
 
   const studies = studiesData.studies;
   const currentIndex = studies.findIndex((study) => study.id === getId);
@@ -27,7 +29,7 @@ const CaseStudiesDetails = () => {
     }
   }, [getStudiesData, router]);
 
-  const handleNavigation = (direction) => {
+  const handleNavigation = (direction: "prev" | "next"): void => {
     if (direction === "prev" && prevStudy) {
       router.push(`/case-details/${prevStudy.id}`);
     } else if (direction === "next" && nextStudy) {
@@ -264,9 +266,9 @@ const CaseStudiesDetails = () => {
                   <div className="col-lg-8 position-relative z-2">
                     <div className="service__body position-relative z-2 mt--52 mt-sm--32">
                       <p className="service__desc mb-0">{data.desc}</p>
-                      {data.descTwo ? (
+                      {(data as Record<string, unknown>).descTwo ? (
                         <p className="service__desc service__desc-bottom">
-                          {data.descTwo}
+                          {(data as Record<string, unknown>).descTwo as string}
                         </p>
                       ) : (
                         ""

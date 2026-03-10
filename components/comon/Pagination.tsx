@@ -6,7 +6,12 @@ import { usePathname, useSearchParams } from "next/navigation";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft, faArrowRight } from "@fortawesome/pro-regular-svg-icons";
 
-const Pagination = ({ limit = 6, total }) => {
+interface PaginationProps {
+  limit?: number;
+  total: number;
+}
+
+const Pagination = ({ limit = 6, total }: PaginationProps) => {
   const pathname = usePathname();
   const searchParams = useSearchParams();
   const params = new URLSearchParams(searchParams.toString());
@@ -14,12 +19,12 @@ const Pagination = ({ limit = 6, total }) => {
   const pageLength = Math.ceil(total / limit);
   const currentPage = params.get("page") ? Number(params.get("page")) : 1;
 
-  const getPages = () => {
+  const getPages = (): (number | string)[] => {
     if (pageLength <= 3) {
       return Array.from({ length: pageLength }, (_, index) => index + 1);
     }
 
-    const pages = [1, 2, 3];
+    const pages: (number | string)[] = [1, 2, 3];
     if (currentPage > 4 && currentPage < pageLength) {
       pages.push("...");
     }
@@ -31,12 +36,12 @@ const Pagination = ({ limit = 6, total }) => {
     }
     pages.push(pageLength);
 
-    return Array.from(new Set(pages)); // Ensure no duplicates
+    return Array.from(new Set(pages));
   };
 
-  const createPageLink = (page) => {
+  const createPageLink = (page: number | string): string => {
     const newParams = new URLSearchParams(params.toString());
-    newParams.set("page", page);
+    newParams.set("page", String(page));
 
     return `${pathname}?${newParams.toString()}`;
   };

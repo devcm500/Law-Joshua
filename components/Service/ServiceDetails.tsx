@@ -1,20 +1,25 @@
 "use client";
-import React, { useEffect } from "react";
-import Link from "next/link";
 import Image from "next/image";
+import Link from "next/link";
 import { useParams, useRouter } from "next/navigation";
+import { useEffect } from "react";
 import sal from "sal.js";
 
 import serviceData from "../../data/service.json";
 import ServiceSidebar from "./ServiceSidebar";
 
+import type { ServiceData } from "@/types";
+
 const Service = () => {
   const router = useRouter();
   const params = useParams();
-  const getId = parseInt(params.slug);
+  const slug = params.slug as string | string[] | undefined;
+  const slugStr = Array.isArray(slug) ? slug[0] : slug ?? "";
+  const getId: number = parseInt(slugStr, 10);
 
-  let getService;
-  getService = JSON.parse(JSON.stringify(serviceData.service));
+  const getService: ServiceData[] = JSON.parse(
+    JSON.stringify(serviceData.service)
+  );
 
   const checkMatch = getService.find((member) => member.id === getId);
 
@@ -64,14 +69,16 @@ const Service = () => {
               <h4 className="service__num">
                 00{checkMatch && checkMatch.serial}
               </h4>
-              <Image
-                className="service__img service__img-details"
-                src={checkMatch && checkMatch.bannerImg}
-                width={1320}
-                height={600}
-                unoptimized={true}
-                alt="image"
-              />
+              {checkMatch?.bannerImg && (
+                <Image
+                  className="service__img service__img-details"
+                  src={checkMatch.bannerImg}
+                  width={1320}
+                  height={600}
+                  unoptimized={true}
+                  alt="image"
+                />
+              )}
             </div>
           </div>
 

@@ -9,11 +9,12 @@ export default function SearchBlog() {
   const searchParams = useSearchParams();
   const params = new URLSearchParams(searchParams.toString());
   const router = useRouter();
-  const handleChangesearch = () => {
+
+  const handleChangesearch = (): void => {
     if (searchQuery != "") {
       const createPageLink = () => {
         const newParams = new URLSearchParams(params.toString());
-        newParams.set("page", 1);
+        newParams.set("page", "1");
         newParams.set("search", searchQuery);
 
         return `/archive?${newParams.toString()}`;
@@ -21,10 +22,11 @@ export default function SearchBlog() {
       router.push(createPageLink());
     }
   };
+
   return (
     <form
       className="blog__search"
-      onSubmit={(e) => {
+      onSubmit={(e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         handleChangesearch();
       }}
@@ -33,7 +35,9 @@ export default function SearchBlog() {
         className="form-control"
         type="text"
         placeholder="Search.. crime, politics, business"
-        onChange={(e) => setSearchQuery(e.target.value)}
+        onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
+          setSearchQuery(e.target.value)
+        }
       />
       <i
         className="fa-regular fa-magnifying-glass"

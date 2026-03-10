@@ -9,7 +9,13 @@ import {
 } from "next-share";
 import React, { useEffect, useState } from "react";
 
-export default function ShareComponent2({ blog }) {
+import type { Blog } from "@/types";
+
+interface ShareComponent2Props {
+  blog: Blog;
+}
+
+export default function ShareComponent2({ blog }: ShareComponent2Props) {
   const [fullUrl, setFullUrl] = useState("");
 
   useEffect(() => {

@@ -2,6 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 import DetailsBreadcrumb from "./DetailsBreadcrumb";
 
+import type { Blog } from "@/types";
+
 import personImg from "../../public/images/person/person-1.png";
 
 import BlogNavigation from "./BlogNavigation";
@@ -11,7 +13,11 @@ import ShareComponent from "./ShareComponent";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShareNodes } from "@fortawesome/pro-solid-svg-icons";
 
-const BlogDetails = ({ blog }) => {
+interface BlogDetailsProps {
+  blog: Blog;
+}
+
+const BlogDetails = ({ blog }: BlogDetailsProps) => {
   return (
     <>
       <div className="blog-details">

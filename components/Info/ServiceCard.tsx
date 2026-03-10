@@ -295,7 +295,7 @@ const ServiceCard = () => {
             <h4 className="info-card--title m-0">Free Consulting for any case</h4>
             <p className="info-card--desc">
               Joshua &quot;Josh&quot; D. Allison is the owner and managing
-              attorney of JOSHUA D. ALLISON
+              attorney of JOSHUA D. ALLISON
             </p>
 
             <div className="d-flex justify-content-center">

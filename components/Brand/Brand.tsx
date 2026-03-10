@@ -6,11 +6,14 @@ import Image from "next/image";
 import sal from "sal.js";
 
 import BrandData from "../../data/brand.json";
-// import Swiper from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 
-const Brand = ({ parentClass }) => {
+interface BrandProps {
+  parentClass?: string;
+}
+
+const Brand = ({ parentClass }: BrandProps) => {
   useEffect(() => {
     sal({
       threshold: 0.01,
@@ -22,29 +25,6 @@ const Brand = ({ parentClass }) => {
       <div className={`brand law-section-gap ${parentClass || ''}`}>
         <div className="container">
           <div className="row slider">
-            {/* <ul className="brand__list slide-track">
-              {BrandData?.brand?.map((data, i) => (
-                <li
-                  className="slide"
-                  key={i}
-                  data-sal="slide-up"
-                  data-sal-duration="800"
-                  data-sal-delay={100 * (i + 1)}
-                >
-                  <div className="single-brand">
-                    <Image
-                      className="img-fluid"
-                      src={data.img}
-                      width={data.wdt}
-                      height={data.ht}
-                      unoptimized={true}
-                      alt="brand logo"
-                    />
-                  </div>
-                </li>
-              ))}
-            </ul> */}
-
             <Swiper
               className="brand__list"
               modules={[Autoplay]}
@@ -78,7 +58,6 @@ const Brand = ({ parentClass }) => {
                 </SwiperSlide>
               ))}
             </Swiper>
-
           </div>
         </div>
       </div>

@@ -1,7 +1,13 @@
 import { fetchBlogs } from "./fetchBlogs";
+import type { Blog, BlogResponse } from "@/types";
 
-export const loadBlogs = async ({ limit, skip, ...rest }) => {
-  const params = {
+interface LoadBlogsParams extends Record<string, unknown> {
+  limit?: number;
+  skip?: number;
+}
+
+export const loadBlogs = async ({ limit, skip, ...rest }: LoadBlogsParams): Promise<BlogResponse> => {
+  const params: Record<string, unknown> = {
     content_type: "lowFirmBlogs",
     limit,
     skip,
@@ -9,12 +15,11 @@ export const loadBlogs = async ({ limit, skip, ...rest }) => {
   };
 
   const response = await fetchBlogs(params);
-
   return { blogs: response.items, total: response.total };
 };
 
-export const loadBlogsWithCategory = async ({ limit, skip, category }) => {
-  const params = {
+export const loadBlogsWithCategory = async ({ limit, skip, category }: { limit?: number; skip?: number; category: string }): Promise<BlogResponse> => {
+  const params: Record<string, unknown> = {
     content_type: "lowFirmBlogs",
     "fields.category.sys.contentType.sys.id": "lowFirmBlogCategories",
     "fields.category.fields.title": decodeURIComponent(category),
@@ -26,8 +31,8 @@ export const loadBlogsWithCategory = async ({ limit, skip, category }) => {
   return { blogs: response.items, total: response.total };
 };
 
-export const loadBlogsWithTag = async ({ limit, skip, tag }) => {
-  const params = {
+export const loadBlogsWithTag = async ({ limit, skip, tag }: { limit?: number; skip?: number; tag: string }): Promise<BlogResponse> => {
+  const params: Record<string, unknown> = {
     content_type: "lowFirmBlogs",
     "fields.tags[in]": decodeURIComponent(tag),
     limit,
@@ -38,12 +43,8 @@ export const loadBlogsWithTag = async ({ limit, skip, tag }) => {
   return { blogs: response.items, total: response.total };
 };
 
-export const loadBlogsWithSearchQuery = async ({
-  limit,
-  skip,
-  searchQuery,
-}) => {
-  const params = {
+export const loadBlogsWithSearchQuery = async ({ limit, skip, searchQuery }: { limit?: number; skip?: number; searchQuery: string }): Promise<BlogResponse> => {
+  const params: Record<string, unknown> = {
     content_type: "lowFirmBlogs",
     "fields.title[match]": decodeURIComponent(searchQuery),
     limit,
@@ -54,8 +55,8 @@ export const loadBlogsWithSearchQuery = async ({
   return { blogs: response.items, total: response.total };
 };
 
-export const loadBlogsFeatured = async ({ limit }) => {
-  const params = {
+export const loadBlogsFeatured = async ({ limit }: { limit?: number }): Promise<BlogResponse> => {
+  const params: Record<string, unknown> = {
     content_type: "lowFirmBlogs",
     limit: limit ? limit : 100,
     "fields.featured": true,
@@ -65,8 +66,8 @@ export const loadBlogsFeatured = async ({ limit }) => {
   return { blogs: response.items, total: response.total };
 };
 
-export const loadPopulrtBlogs = async () => {
-  const params = {
+export const loadPopulrtBlogs = async (): Promise<Blog[]> => {
+  const params: Record<string, unknown> = {
     content_type: "lowFirmBlogs",
     limit: 3,
     order: "-fields.viewCount",
@@ -76,8 +77,8 @@ export const loadPopulrtBlogs = async () => {
   return response.items;
 };
 
-export const loadAllTags = async () => {
-  const params = {
+export const loadAllTags = async (): Promise<string[]> => {
+  const params: Record<string, unknown> = {
     content_type: "lowFirmBlogs",
     select: "fields.tags",
   };
@@ -88,8 +89,12 @@ export const loadAllTags = async () => {
   return uniqueTags;
 };
 
-export const loadAllCategories = async () => {
-  const params = {
+interface CategoryItem {
+  title?: string;
+}
+
+export const loadAllCategories = async (): Promise<CategoryItem[]> => {
+  const params: Record<string, unknown> = {
     content_type: "lowFirmBlogs",
     select: "fields.category",
   };
@@ -107,8 +112,8 @@ export const loadAllCategories = async () => {
   return uniquecategories;
 };
 
-export const loadBlogsRelated = async ({ category, tags, slug }) => {
-  const params = {
+export const loadBlogsRelated = async ({ category, tags, slug }: { category: string; tags: string; slug: string }): Promise<BlogResponse> => {
+  const params: Record<string, unknown> = {
     content_type: "lowFirmBlogs",
     limit: 2,
     "fields.category.sys.contentType.sys.id": "lowFirmBlogCategories",

@@ -19,10 +19,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft, faArrowRight } from "@fortawesome/pro-solid-svg-icons";
 
 const Studies = () => {
-  const swiperRef = useRef(null);
+  const swiperRef = useRef<any>(null);
   const dotNames = ["Family", "Crime", "Business", "Personal"];
 
-  const handleTabClick = (index) => {
+  const handleTabClick = (index: number): void => {
     if (swiperRef.current && swiperRef.current.swiper) {
       swiperRef.current.swiper.slideTo(index);
     }
@@ -98,10 +98,11 @@ const Studies = () => {
                   const paginationContainer =
                     document.querySelector(".custom-pagination");
                   if (paginationContainer) {
-                    paginationContainer.addEventListener("click", (e) => {
-                      if (e.target.classList.contains("custom-bullet")) {
-                        const index = e.target.getAttribute("data-index");
-                        handleTabClick(parseInt(index));
+                    paginationContainer.addEventListener("click", (e: Event) => {
+                      const target = e.target as HTMLElement;
+                      if (target?.classList.contains("custom-bullet")) {
+                        const index = target.getAttribute("data-index");
+                        if (index) handleTabClick(parseInt(index));
                       }
                     });
                   }

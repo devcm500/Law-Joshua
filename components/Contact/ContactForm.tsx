@@ -8,9 +8,11 @@ import SectionHead from "../Header/Section-Head";
 
 import personImg from "../../public/images/person/person-2.png";
 
+import type { FormData, FormErrors, FormStatus } from "@/types";
+
 const ContactForm = () => {
-  const [status, setStatus] = useState("idle");
-  const [formData, setFormData] = useState({
+  const [status, setStatus] = useState<FormStatus>("idle");
+  const [formData, setFormData] = useState<FormData>({
     firstname: "",
     lastname: "",
     email: "",
@@ -19,7 +21,7 @@ const ContactForm = () => {
     description: "",
   });
 
-  const [errors, setErrors] = useState({
+  const [errors, setErrors] = useState<FormErrors>({
     firstname: "",
     lastname: "",
     email: "",
@@ -28,14 +30,16 @@ const ContactForm = () => {
     description: "",
   });
 
-  const handleInputChange = (e) => {
+  const handleInputChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>
+  ) => {
     const { id, value } = e.target;
     setFormData({ ...formData, [id]: value });
     setErrors({ ...errors, [id]: "" });
   };
 
-  const validateForm = () => {
-    const newErrors = {
+  const validateForm = (): boolean => {
+    const newErrors: FormErrors = {
       firstname: "",
       lastname: "",
       email: "",
@@ -90,14 +94,16 @@ const ContactForm = () => {
     return isValid;
   };
 
-  const handleFormSubmit = async (e) => {
+  const handleFormSubmit = async (
+    e: React.FormEvent<HTMLFormElement>
+  ): Promise<void> => {
     e.preventDefault();
 
     if (validateForm()) {
       setStatus("sending");
       try {
         const response = await fetch(
-          process.env.NEXT_PUBLIC_FORMSPREE_ENDPOINT,
+          process.env.NEXT_PUBLIC_FORMSPREE_ENDPOINT as string,
           {
             method: "POST",
             headers: { "Content-Type": "application/json" },

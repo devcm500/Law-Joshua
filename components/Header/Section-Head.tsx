@@ -3,7 +3,11 @@
 import React, { useEffect } from "react";
 import sal from "sal.js";
 
-const SectionHead = ({ title }) => {
+interface SectionHeadProps {
+  title: string;
+}
+
+const SectionHead = ({ title }: SectionHeadProps) => {
   useEffect(() => {
     sal({
       threshold: 0.01,

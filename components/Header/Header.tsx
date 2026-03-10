@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { useRouter, usePathname } from "next/navigation";
+import { usePathname } from "next/navigation";
 
 import Image from "next/image";
 import Link from "next/link";
@@ -13,46 +13,22 @@ import NavList from "./NavList";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/pro-regular-svg-icons";
 
-const Header = ({ bgDark }) => {
-  const router = useRouter();
-  const pathname = usePathname();
+interface HeaderProps {
+  bgDark?: boolean;
+}
 
+const Header = ({ bgDark }: HeaderProps) => {
+  const pathname = usePathname();
   const [isSticky, setIsSticky] = useState(false);
 
-  useEffect(() => {
-    // const offcanvasElement = document.getElementById("offcanvasExample");
-
-    // if (offcanvasElement) {
-    //   offcanvasElement.addEventListener("shown.bs.offcanvas", () => {
-    //     document.body.classList.add("overflow-hidden");
-    //   });
-
-    //   offcanvasElement.addEventListener("hidden.bs.offcanvas", () => {
-    //     document.body.classList.remove("overflow-hidden");
-    //   });
-    // }
-
-    // return () => {
-    //   if (offcanvasElement) {
-    //     offcanvasElement.removeEventListener("shown.bs.offcanvas", () => { });
-    //     offcanvasElement.removeEventListener("hidden.bs.offcanvas", () => { });
-    //   }
-    // };
-  }, []);
+  useEffect(() => {}, []);
   
   useEffect(() => {
-    const isExcludedPath =
-      /^\/(blog-details|serviceDetails|case-details)\/\d+$/.test(pathname);
-
     const handleScroll = () => {
       setIsSticky(window.scrollY > 200);
     };
 
-    // if (!isExcludedPath) {
     window.addEventListener("scroll", handleScroll);
-    // } else {
-    //   setIsSticky(false);
-    // }
 
     return () => {
       window.removeEventListener("scroll", handleScroll);
@@ -101,7 +77,6 @@ const Header = ({ bgDark }) => {
                   </Link>
                 </div>
               </div>
-              {/* Hamburger */}
               <button
                 className="law-hamburger-btn d-xl-none"
                 type="button"

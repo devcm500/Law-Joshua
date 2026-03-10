@@ -13,7 +13,7 @@ const MobileMenu = () => {
       <div
         className="offcanvas offcanvas-start mobile-menu__offcanvas"
         data-bs-scroll="true"
-        tabIndex="-1"
+        tabIndex={-1}
         id="offcanvasExample"
         aria-labelledby="offcanvasExampleLabel"
       >

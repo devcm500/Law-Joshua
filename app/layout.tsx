@@ -3,7 +3,6 @@ import localFont from "next/font/local";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 
-// ========= Plugins CSS START =========
 import "../node_modules/sal.js/dist/sal.css";
 import "swiper/css";
 import "swiper/css/scrollbar";
@@ -17,7 +16,6 @@ import { config } from "@fortawesome/fontawesome-svg-core";
 import "../styles/fontawesome.css";
 
 config.autoAddCss = false;
-// ========= Plugins CSS END =========
 
 import "../public/scss/style.scss";
 
@@ -84,7 +82,7 @@ const fontVariables = [
   americanScribe.variable,
 ].join(" ");
 
-export default function RootLayout({ children }) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={fontVariables} suppressHydrationWarning>
       <body className="law-main" suppressHydrationWarning>

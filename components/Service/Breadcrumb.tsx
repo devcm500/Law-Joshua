@@ -3,7 +3,13 @@
 import React, { useEffect } from "react";
 import sal from "sal.js";
 
-const Breadcrumb = ({ title, subTitle, parentClass }) => {
+interface BreadcrumbProps {
+  title: string;
+  subTitle?: string;
+  parentClass?: string;
+}
+
+const Breadcrumb = ({ title, subTitle, parentClass }: BreadcrumbProps) => {
   useEffect(() => {
     sal({
       threshold: 0.01,

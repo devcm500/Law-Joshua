@@ -17,5 +17,3 @@ const HomePagelayout = () => {
 };
 
 export default HomePagelayout;
-
-

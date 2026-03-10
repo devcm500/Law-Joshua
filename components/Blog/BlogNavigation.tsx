@@ -1,9 +1,15 @@
 import Image from "next/image";
 
+import type { Blog } from "@/types";
+
 import { loadBlogs } from "@/lib/getBlogFunctions";
 import Link from "next/link";
 
-export default async function BlogNavigation({ blog }) {
+interface BlogNavigationProps {
+  blog: Blog;
+}
+
+export default async function BlogNavigation({ blog }: BlogNavigationProps) {
   const prevBlogs = await loadBlogs({
     "sys.createdAt[lt]": blog.createdAt,
     order: "-sys.createdAt",

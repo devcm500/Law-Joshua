@@ -10,7 +10,9 @@ import Counter from "./Counter";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlus, faPercent } from "@fortawesome/pro-solid-svg-icons";
 
-const iconMap = {
+import type { IconDefinition } from "@fortawesome/fontawesome-svg-core";
+
+const iconMap: Record<string, IconDefinition> = {
   faPlus,
   faPercent,
 };
@@ -120,7 +122,7 @@ const AboutTwo = () => {
                     }`}
                     id={`${data.tab}-tab-pane`}
                     role="tabpanel"
-                    tabIndex="0"
+                    tabIndex={0}
                   >
                     <p className="law__about-tabs--desc">{data.desc}</p>
                     <div className="law__about-tabs--list">
@@ -184,7 +186,7 @@ const AboutTwo = () => {
                       </div>
                       <div className="d-flex align-items-end position-relative z-2">
                         <span className="law__about-card-num--sm">
-                          <Counter value={data.num} format="(.dd)" />
+                          <Counter value={Number(data.num)} format="(.dd)" />
                         </span>
 
                         <span className="law__about-card-num--i">

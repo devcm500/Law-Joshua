@@ -4,9 +4,14 @@ import { useEffect, useState, useRef } from "react";
 import dynamic from "next/dynamic";
 const Odometer = dynamic(() => import("react-odometerjs"), { ssr: false });
 
-const Counter = ({ value, format = "d" }) => {
+interface CounterProps {
+  value: number;
+  format?: string;
+}
+
+const Counter = ({ value, format = "d" }: CounterProps) => {
   const [count, setCount] = useState(0);
-  const counterRef = useRef(null);
+  const counterRef = useRef<HTMLSpanElement>(null);
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {

@@ -8,13 +8,18 @@ import teamData from "../../data/team.json";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebookF, faLinkedin, faLinkedinIn, faYoutube } from "@fortawesome/free-brands-svg-icons";
 
+import type { TeamMember } from "@/types";
+
 const TeamDetails = () => {
   const router = useRouter();
   const params = useParams();
-  const getId = parseInt(params.slug);
+  const slug = params.slug as string | string[] | undefined;
+  const slugStr = Array.isArray(slug) ? slug[0] : slug ?? "";
+  const getId: number = parseInt(slugStr, 10);
 
-  let getTeamMember;
-  getTeamMember = JSON.parse(JSON.stringify(teamData.team));
+  const getTeamMember: TeamMember[] = JSON.parse(
+    JSON.stringify(teamData.team)
+  );
 
   const checkMatch = getTeamMember.find((member) => member.id === getId);
 

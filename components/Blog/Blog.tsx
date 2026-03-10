@@ -4,11 +4,19 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 
+import type { Blog } from "@/types";
+
 import SectionHead from "../Header/Section-Head";
 import Pagination from "../comon/Pagination";
 import SearchBlog from "./SearchBlog";
 
-const Blog = ({ blogs, total, showFilter = true }) => {
+interface BlogProps {
+  blogs: Blog[];
+  total: number;
+  showFilter?: boolean;
+}
+
+const Blog = ({ blogs, total, showFilter = true }: BlogProps) => {
   return (
     <>
       <div className="blog">

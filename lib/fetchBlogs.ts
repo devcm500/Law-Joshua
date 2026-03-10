@@ -1,47 +1,66 @@
 import { client } from "@/lib/contentfull";
+import type { Blog } from "@/types";
 
-// Function to fetch blog posts based on parameters
-export async function fetchBlogs(params) {
+interface ContentfulImageField {
+  fields?: {
+    file?: {
+      url?: string;
+      details?: {
+        image?: {
+          height?: number;
+          width?: number;
+        };
+      };
+    };
+  };
+}
+
+interface FetchBlogsResponse {
+  items: Blog[];
+  total: number;
+}
+
+export async function fetchBlogs(params: Record<string, unknown>): Promise<FetchBlogsResponse> {
   const entries = await client.getEntries({
     ...params,
   });
 
-  const items = entries.items.map((item) => {
-    // Validation helper
-    const validateImage = (imageField) => {
-      if (
-        !imageField?.fields?.file?.url ||
-        !imageField.fields.file.details?.image
-      ) {
-        return {};
-      }
-      return {
-        url: imageField.fields.file.url,
-        height: imageField.fields.file.details.image.height ?? 0,
-        width: imageField.fields.file.details.image.width ?? 0,
-      };
-    };
-
+  const validateImage = (imageField: ContentfulImageField) => {
+    if (
+      !imageField?.fields?.file?.url ||
+      !imageField.fields.file.details?.image
+    ) {
+      return {};
+    }
     return {
-      title: item.fields?.title ?? "Untitled", // Default title if missing
-      slug: item.fields?.slug ?? "",
-      thumbnail: validateImage(item.fields?.thumbnail),
+      url: imageField.fields.file.url,
+      height: imageField.fields.file.details.image.height ?? 0,
+      width: imageField.fields.file.details.image.width ?? 0,
+    };
+  };
+
+  const items = entries.items.map((item) => {
+    const fields = item.fields as Record<string, any>;
+    return {
+      title: fields?.title ?? "Untitled",
+      slug: fields?.slug ?? "",
+      thumbnail: validateImage(fields?.thumbnail),
       category: {
-        title: item.fields?.category?.fields.title,
-        ...validateImage(item.fields?.category?.fields.thumbnail),
+        title: (fields?.category as any)?.fields?.title,
+        ...validateImage((fields?.category as any)?.fields?.thumbnail),
       },
-      description: item.fields?.description ?? "", // Default rich text
-      featured: item.fields?.featured ?? false,
-      tags: item.fields?.tags ?? [],
-      shortDescription: item.fields?.shortDescription ?? "",
+      description: fields?.description ?? "",
+      featured: fields?.featured ?? false,
+      tags: fields?.tags ?? [],
+      shortDescription: fields?.shortDescription ?? "",
       author: {
-        name: item.fields?.author?.fields.name,
-        ...validateImage(item.fields?.author?.fields.avatar),
+        name: (fields?.author as any)?.fields?.name,
+        ...validateImage((fields?.author as any)?.fields?.avatar),
       },
       createdAt: item.sys.createdAt,
-      viewCount: item.fields?.viewCount ?? 0,
+      viewCount: fields?.viewCount ?? 0,
     };
-  });
+  }) as Blog[];
 
   return { items, total: entries.total };
 }

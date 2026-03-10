@@ -1,12 +1,14 @@
 import { documentToPlainTextString } from "@contentful/rich-text-plain-text-renderer";
+import type { Document } from "@contentful/rich-text-types";
 
-export const readTime = (blog) => {
-  const plainText = documentToPlainTextString(blog?.description);
+interface BlogWithDescription {
+  description?: Document;
+}
 
-  // Calculate word count and reading time
+export const readTime = (blog: BlogWithDescription): number => {
+  const plainText = documentToPlainTextString(blog?.description as Document);
   const words = plainText.split(/\s+/).length;
-  const readingSpeed = 200; // Average reading speed (words per minute)
-  const readTime = Math.ceil(words / readingSpeed); // Time in minutes
-
-  return readTime;
+  const readingSpeed = 200;
+  const time = Math.ceil(words / readingSpeed);
+  return time;
 };

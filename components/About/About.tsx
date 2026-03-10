@@ -18,7 +18,7 @@ const About = () => {
       <div className="law__about law-section-gapBottom">
         <div className="container">
           <div className="row justify-content-between">
-            <SectionHead title="Founder’s Message" />
+            <SectionHead title="Founder's Message" />
             <div
               className="col-lg-6 col-xl-5"
               data-sal="slide-up"
@@ -105,13 +105,15 @@ const About = () => {
                       </p>
                     </div>
 
-                    <Image
-                      className="img-fluid law__about-brand"
-                      src={data.brandImg}
-                      width={188}
-                      height={42}
-                      alt="brand image"
-                    />
+                    {data.brandImg && (
+                      <Image
+                        className="img-fluid law__about-brand"
+                        src={data.brandImg}
+                        width={188}
+                        height={42}
+                        alt="brand image"
+                      />
+                    )}
                   </div>
 
                   <div className="d-grid d-sm-flex justify-content-start align-items-center mt-sm--12">
@@ -178,14 +180,16 @@ const About = () => {
                       </Link>
                     </div>
 
-                    <div className="order-1 order-sm-2 d-none d-md-block">
-                      <Image
-                        src={data.signature}
-                        width={182}
-                        height={103}
-                        alt="image"
-                      />
-                    </div>
+                    {data.signature && (
+                      <div className="order-1 order-sm-2 d-none d-md-block">
+                        <Image
+                          src={data.signature}
+                          width={182}
+                          height={103}
+                          alt="image"
+                        />
+                      </div>
+                    )}
                   </div>
                 </div>
               ))}

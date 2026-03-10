@@ -8,6 +8,18 @@ import SectionHead from "../Header/Section-Head";
 
 import Pagination from "../comon/Pagination";
 import { faMagnifyingGlass } from "@fortawesome/pro-regular-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+import type { Blog } from "@/types";
+
+interface ArchiveProps {
+  blogs: Blog[];
+  total: number;
+  showFilter?: boolean;
+  category?: string;
+  searchQuery?: string;
+  tag?: string;
+}
 
 const Archive = ({
   blogs,
@@ -16,7 +28,7 @@ const Archive = ({
   category,
   searchQuery,
   tag,
-}) => {
+}: ArchiveProps) => {
   return (
     <>
       <div className="blog">

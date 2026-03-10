@@ -7,20 +7,36 @@ import BackToTop from "@/app/backToTop";
 import { client } from "@/lib/contentfull";
 import { createClient } from "contentful-management";
 import Link from "next/link";
+import type { Blog } from "@/types";
+
 export const metadata = {
   title: "Blog Details Page - Law Firm",
   description: "Law Firm",
 };
 
-async function BlogDetailsPage({ params }) {
+interface ContentfulImageField {
+  fields?: {
+    file?: {
+      url?: string;
+      details?: {
+        image?: {
+          height?: number;
+          width?: number;
+        };
+      };
+    };
+  };
+}
+
+async function BlogDetailsPage({ params }: { params: Promise<{ slug: string }> }) {
   const slug = (await params).slug;
-  const fetchBlogPosts = async () => {
+  const fetchBlogPosts = async (): Promise<(Blog & { id: string })[]> => {
     const entries = await client.getEntries({
-      content_type: "lowFirmBlogs", // Replace with your Contentful content type ID
+      content_type: "lowFirmBlogs",
       "fields.slug": slug,
       limit: 1,
     });
-    const validateImage = (imageField) => {
+    const validateImage = (imageField: ContentfulImageField) => {
       if (
         !imageField?.fields?.file?.url ||
         !imageField.fields.file.details?.image
@@ -34,34 +50,36 @@ async function BlogDetailsPage({ params }) {
       };
     };
 
-    return entries.items.map((item) => ({
-      title: item.fields?.title ?? "Untitled", // Default title if missing
-      slug: item.fields?.slug ?? "",
-      thumbnail: validateImage(item.fields?.thumbnail),
-      category: {
-        title: item.fields?.category?.fields.title,
-        ...validateImage(item.fields?.category?.fields.thumbnail),
-      },
-      description: item.fields?.description ?? "", // Default rich text
-      featured: item.fields?.featured ?? false,
-      tags: item.fields?.tags ?? [],
-      shortDescription: item.fields?.shortDescription ?? "",
-      author: {
-        name: item.fields?.author?.fields.name,
-        ...validateImage(item.fields?.author?.fields.avatar),
-      },
-      createdAt: item.sys.createdAt,
-      viewCount: item.fields?.viewCount ?? 0,
-
-      id: item.sys.id,
-    }));
+    return entries.items.map((item) => {
+      const fields = item.fields as Record<string, any>;
+      return {
+        title: fields?.title ?? "Untitled",
+        slug: fields?.slug ?? "",
+        thumbnail: validateImage(fields?.thumbnail),
+        category: {
+          title: (fields?.category as any)?.fields?.title,
+          ...validateImage((fields?.category as any)?.fields?.thumbnail),
+        },
+        description: fields?.description ?? "",
+        featured: fields?.featured ?? false,
+        tags: fields?.tags ?? [],
+        shortDescription: fields?.shortDescription ?? "",
+        author: {
+          name: (fields?.author as any)?.fields?.name,
+          ...validateImage((fields?.author as any)?.fields?.avatar),
+        },
+        createdAt: item.sys.createdAt,
+        viewCount: fields?.viewCount ?? 0,
+        id: item.sys.id,
+      };
+    }) as (Blog & { id: string })[];
   };
 
   const managementClient = createClient({
     accessToken: process.env.CONTENTFUL_MANAGEMENT_API_KEY || "",
   });
   const blogs = await fetchBlogPosts();
-  const updateViewCount = async (entryId) => {
+  const updateViewCount = async (entryId: string) => {
     try {
       const space = await managementClient.getSpace(
         process.env.CONTENTFUL_SPACE_ID || ""
@@ -69,14 +87,10 @@ async function BlogDetailsPage({ params }) {
       const environment = await space.getEnvironment("master");
       const entry = await environment.getEntry(entryId);
 
-      // Increment the view count
-      const viewCount = entry.fields.viewCount["en-US"] || 0;
-      entry.fields.viewCount["en-US"] = viewCount + 1;
+      const viewCount = (entry.fields.viewCount as Record<string, number>)["en-US"] || 0;
+      (entry.fields.viewCount as Record<string, number>)["en-US"] = viewCount + 1;
 
-      // Update the entry (no need to pass the sys.version manually)
       const updatedEntry = await entry.update();
-
-      // Publish the entry after updating
       await updatedEntry.publish();
 
       console.log("View count updated successfully");

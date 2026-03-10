@@ -1,4 +1,4 @@
-const contentful = require("contentful");
+import { createClient } from "contentful";
 
 const space = process.env.CONTENTFUL_SPACE_ID;
 const accessToken = process.env.CONTENTFUL_ACCESS_TOKEN;
@@ -10,4 +10,4 @@ if (!space || !accessToken) {
   );
 }
 
-export const client = contentful.createClient({ space, accessToken });
+export const client = createClient({ space, accessToken });

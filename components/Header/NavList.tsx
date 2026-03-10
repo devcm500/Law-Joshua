@@ -22,7 +22,7 @@ const NavList = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  const isActive = (href) =>
+  const isActive = (href: string): string =>
     pathname === href || pathname.startsWith(`${href}/`)
       ? "law-mainmenu-active"
       : "";
@@ -38,8 +38,8 @@ const NavList = () => {
               role="button"
               data-bs-toggle={`${isMobile ? "collapse" : ""}`}
               // eslint-disable-next-line jsx-a11y/aria-proptypes
-              aria-expanded={`${isMobile ? "false" : ""}`}
-              aria-controls={`${isMobile ? "collapseServices" : ""}`}
+              aria-expanded={isMobile ? false : undefined}
+              aria-controls={isMobile ? "collapseServices" : undefined}
             >
               Legal Services
               <svg
@@ -104,8 +104,8 @@ const NavList = () => {
               href={`${isMobile ? "#collapseTeams" : "/ourteam"}`}
               data-bs-toggle={`${isMobile ? "collapse" : ""}`}
               role="button"
-              aria-expanded={`${isMobile ? "false" : ""}`}
-              aria-controls={`${isMobile ? "collapseTeams" : ""}`}
+              aria-expanded={isMobile ? false : undefined}
+              aria-controls={isMobile ? "collapseTeams" : undefined}
             >
               Our Team
               <svg

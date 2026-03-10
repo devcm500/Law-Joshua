@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useEffect, useRef } from "react";
 
 const BackToTop = () => {
-  const progressRef = useRef(null);
+  const progressRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const progressPath = progressRef.current?.querySelector("path");
@@ -14,7 +14,7 @@ const BackToTop = () => {
     const pathLength = progressPath.getTotalLength();
     progressPath.style.transition = "none";
     progressPath.style.strokeDasharray = `${pathLength} ${pathLength}`;
-    progressPath.style.strokeDashoffset = pathLength;
+    progressPath.style.strokeDashoffset = String(pathLength);
     progressPath.getBoundingClientRect();
     progressPath.style.transition = "stroke-dashoffset 10ms linear";
 
@@ -24,7 +24,7 @@ const BackToTop = () => {
         document.documentElement.scrollHeight -
         document.documentElement.clientHeight;
       const progress = pathLength - (scroll * pathLength) / height;
-      progressPath.style.strokeDashoffset = progress;
+      progressPath.style.strokeDashoffset = String(progress);
 
       const lawProgressParent = progressRef.current;
       if (lawProgressParent) {

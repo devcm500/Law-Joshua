@@ -1,9 +1,16 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+
+import type { Blog } from "@/types";
+
 import ShareComponent2 from "./ShareComponent2";
 
-const DetailsBreadcrumb = ({ blog }) => {
+interface DetailsBreadcrumbProps {
+  blog: Blog;
+}
+
+const DetailsBreadcrumb = ({ blog }: DetailsBreadcrumbProps) => {
   return (
     <>
       <div className="blog-details-breadcrumb">

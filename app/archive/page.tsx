@@ -13,14 +13,14 @@ export const metadata = {
   description: "Law Firm",
 };
 
-const BlogArchive = async ({ searchParams }) => {
+const BlogArchive = async ({ searchParams }: { searchParams: Promise<{ page?: string; category?: string; tag?: string; search?: string }> }) => {
   const filters = await searchParams;
-  const pageNumber = filters.page || 1;
+  const pageNumber = filters.page || "1";
   const category = filters.category || "";
   const tag = filters.tag || "";
   const searchQuery = filters.search || "";
 
-  const loadBlogConfig = {
+  const loadBlogConfig: Record<string, unknown> = {
     skip: Number(pageNumber) * 6 - 6,
     limit: 6,
   };

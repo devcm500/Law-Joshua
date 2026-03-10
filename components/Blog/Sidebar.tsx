@@ -3,10 +3,28 @@ import { Link as ScrollLink } from "react-scroll";
 import React, { useEffect, useState } from "react";
 import { documentToPlainTextString } from "@contentful/rich-text-plain-text-renderer";
 
-const extractHeadings = (richTextDocument) => {
-  const headings = [];
+import type { Document } from "@contentful/rich-text-types";
+import type { Blog } from "@/types";
 
-  const traverseNodes = (nodes) => {
+interface HeadingItem {
+  level: number;
+  text: string;
+}
+
+interface ContentNode {
+  nodeType: string;
+  content?: ContentNode[];
+  value?: string;
+}
+
+interface SidebarProps {
+  blog: Blog;
+}
+
+const extractHeadings = (richTextDocument: Document): HeadingItem[] => {
+  const headings: HeadingItem[] = [];
+
+  const traverseNodes = (nodes: ContentNode[]) => {
     nodes.forEach((node) => {
       // Check if the node is a heading
       if (
@@ -16,10 +34,10 @@ const extractHeadings = (richTextDocument) => {
         const level = parseInt(node.nodeType.replace("heading-", ""), 10);
 
         // Extract text content from the heading
-        const text = node.content
+        const text = (node.content || [])
           .map((child) => {
             if (child.nodeType === "text") {
-              return child.value;
+              return child.value || "";
             }
             return "";
           })
@@ -39,16 +57,16 @@ const extractHeadings = (richTextDocument) => {
     });
   };
 
-  traverseNodes(richTextDocument.content);
+  traverseNodes(richTextDocument.content as ContentNode[]);
   return headings;
 };
 
-export default function Sidebar({ blog }) {
-  const tableOfContext = blog?.description
-    ? extractHeadings(blog?.description)
+export default function Sidebar({ blog }: SidebarProps) {
+  const tableOfContext = blog?.description && typeof blog.description === "object"
+    ? extractHeadings(blog.description)
     : [];
-  const [activeSection, setActiveSection] = useState("");
-  const [sectionIds, setSectionIds] = useState(
+  const [activeSection, setActiveSection] = useState<string>("");
+  const [sectionIds, setSectionIds] = useState<string[]>(
     tableOfContext.map((elm) => {
       // Clean up the text to create a valid id
       return `${elm.text
@@ -93,7 +111,7 @@ export default function Sidebar({ blog }) {
     };
   }, [sectionIds]);
 
-  const handleScrollToElement = (e, targetId) => {
+  const handleScrollToElement = (e: React.MouseEvent, targetId: string): void => {
     e.preventDefault(); // Prevent default anchor link behavior
     const targetElement = document.getElementById(targetId);
 
@@ -102,8 +120,12 @@ export default function Sidebar({ blog }) {
       targetElement.scrollIntoView({ behavior: "smooth", block: "center" });
     }
   };
+
   // Convert Rich Text to plain text
-  const plainText = documentToPlainTextString(blog?.description);
+  const plainText =
+    blog?.description && typeof blog.description === "object"
+      ? documentToPlainTextString(blog.description)
+      : "";
 
   // Calculate word count and reading time
   const words = plainText.split(/\s+/).length;

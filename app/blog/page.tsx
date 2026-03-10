@@ -10,9 +10,10 @@ export const metadata = {
   title: "Blog Page - Law Firm",
   description: "Law Firm",
 };
-const Blogs = async ({ searchParams }) => {
+
+const Blogs = async ({ searchParams }: { searchParams: Promise<{ page?: string }> }) => {
   const filters = await searchParams;
-  const pageNumber = filters.page || 1;
+  const pageNumber = filters.page || "1";
   const allBlogs = await loadBlogs({
     skip: Number(pageNumber) * 6 - 6,
     limit: 6,
