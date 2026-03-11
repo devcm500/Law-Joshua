@@ -12,7 +12,7 @@
     }
 
     &__body {
-        padding: 170px 0 100px 0;
+        padding: 83px 0 100px 0;
         max-width: 2560px;
         margin: 0 auto;
         position: relative;
@@ -30,11 +30,10 @@
 
         @media #{$xxxl-device-only} {
             min-height: 833px;
-            max-height: 833px;
         }
 
         @media #{$xxl-device} {
-            padding: 120px 0 80px 0;
+            padding: 75px 0 80px 0;
         }
 
         @media #{$xl-device} {
@@ -43,11 +42,11 @@
 
         @media #{$lg-device} {
             aspect-ratio: auto;
-            padding: 120px 0 100px 0;
+            padding: 75px 0 100px 0;
         }
 
         @media #{$md-device} {
-            padding: 120px 0 100px 0;
+            padding: 75px 0 100px 0;
         }
 
         @media #{$sm-device} {
@@ -175,6 +174,15 @@
         @media #{$xxxl-device} {
             max-width: 80%;
         }
+        @media #{$xxl-device} {
+            max-width: 90%;
+            margin-top: 20px;
+        }
+        @media #{$xl-device} {
+            max-width: 90%;
+            margin-top: 20px;
+        }
+    
 
         @media #{$lg-device} {
             margin-top: 20px;
@@ -189,19 +197,35 @@
     &__content-img-top {
         max-width: 694px;
         height: auto;
-        @media #{$xxl-device} {
-            max-width: 75%;
-        }
-
         @media #{$xxxl-device} {
             max-width: 75%;
         }
-
+        @media #{$xxl-device} {
+            max-width: 60%;
+        }
         @media #{$lg-device} {
             max-width: 75%;
         }
     }
+    &__content-img-icon {
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 30px;
+        @media #{$xxl-device} {
+            margin-bottom: 20px;
+            max-width: 100px;
+            height: auto;
+        }
+        @media #{$xl-device} {
+            max-width: 80px;
+            height: auto;
+        }
+        @media #{$sm-device} {
+            max-width: 60px;
+        }
+    }
 
+    
     &__subtitle {
         color: var(--color-light);
         text-align: center;
@@ -213,6 +237,7 @@
 
         @media #{$xxxl-device} {
             font-size: 45px;
+            margin-top: 40px;
         }
 
         @media #{$xxl-device} {
