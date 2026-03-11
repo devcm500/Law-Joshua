@@ -24,7 +24,7 @@
         {
           "title": "Family Law – Child Custody Battle",
           "serial": 1,
-          "thumbImg": "/images/case-details/case-details-thumb-1.png",
+          "thumbImg": "/images/case-details/case-details-thumb-1.webp",
           "desc": "Our client, a mother of two, was facing a challenging custody battle after her ex-spouse filed for full custody, citing financial instability. The case was emotionally charged, with concerns about the children's well-being at the forefront. ",
           "outcome": "The court ruled in favor of our client, granting her primary custody with fair visitation rights for the father. The decision ensured the children’s best interests were prioritized.",
           "outcome_list": [
@@ -141,7 +141,7 @@
         {
           "title": "Criminal Law – Wrongful Accusation Defense",
           "serial": 2,
-          "thumbImg": "/images/case-details/case-details-thumb-2.png",
+          "thumbImg": "/images/case-details/case-details-thumb-2.webp",
           "desc": "A young professional was falsely accused of theft at their workplace, facing criminal charges that could lead to a permanent criminal record and job loss. The evidence against them was circumstantial, but the prosecution was pushing for a conviction.",
           "outcome": "The case was dismissed due to lack of evidence, clearing our client’s name. They were reinstated at their job with no criminal record affecting their future.",
           "outcome_list": [
@@ -258,7 +258,7 @@
         {
           "title": "Business Law – Breach of Contract Dispute",
           "serial": 3,
-          "thumbImg": "/images/case-details/case-details-thumb-3.png",
+          "thumbImg": "/images/case-details/case-details-thumb-3.webp",
           "desc": "Our client, a small business owner, was sued by a vendor for alleged breach of contract, demanding $500,000 in damages. The dispute threatened the company’s financial health and reputation. ",
           "outcome": "The lawsuit was dropped after mediation, with our client paying no damages. Instead, the vendor agreed to a revised contract that benefited both parties.",
           "outcome_list": [
@@ -401,7 +401,7 @@
         {
           "title": "Injury Law – Workplace Injury Compensation",
           "serial": 3,
-          "thumbImg": "/images/case-details/case-details-thumb-4.png",
+          "thumbImg": "/images/case-details/case-details-thumb-4.webp",
           "desc": "A construction worker suffered a severe spinal injury due to unsafe working conditions. The employer denied liability, and the worker’s compensation claim was initially rejected.",
           "outcome": "Our client received a $750,000 settlement covering medical bills, lost wages, and future rehabilitation costs. The case also led to improved safety protocols at the workplace.",
           "outcome_list": [
