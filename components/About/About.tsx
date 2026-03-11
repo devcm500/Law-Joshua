@@ -134,7 +134,7 @@ const About = () => {
                         <Image
                           src={data.signature}
                           width={182}
-                          height={103}
+                          height={104}
                           alt="image"
                         />
                       </div>

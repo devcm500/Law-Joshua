@@ -7,6 +7,8 @@
       "tab": "family",
       "isActive": true,
       "img": "/images/card/card-img-2.png",
+      "imgWidth": 424,
+      "imgHeight": 466,
       "list": [
         {
           "text": "Gathered evidence proving our client’s ability to provide a stable and nurturing home."
@@ -122,6 +124,8 @@
       "tab": "crime",
       "isActive": false,
       "img": "/images/card/card-img-5.png",
+      "imgWidth": 500,
+      "imgHeight": 460,
       "list": [
         {
           "text": "Conducted a detailed investigation to uncover inconsistencies in the prosecution’s claims."
@@ -236,6 +240,8 @@
       "desc": "Our client, a small business owner, was sued by a vendor for alleged breach of contract, demanding $500,000 in damages. The dispute threatened the company’s financial health and reputation.",
       "tab": "business",
       "img": "/images/card/card-img-1.png",
+      "imgWidth": 424,
+      "imgHeight": 466,
       "isActive": false,
       "list": [
         {
@@ -378,6 +384,8 @@
       "tab": "personal",
       "isActive": false,
       "img": "/images/card/card-img-3.png",
+      "imgWidth": 424,
+      "imgHeight": 466,
       "list": [
         {
           "text": "Collected medical records and expert testimonies proving the extent of the injury."

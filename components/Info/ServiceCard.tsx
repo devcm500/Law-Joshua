@@ -1,11 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
 import { ArrowRightIcon } from "../icons/SvgIcons";
 
 import bagIcon from "../../public/images/icons/bag.svg";
-import parentIcon from "../../public/images/icons/parent.svg";
 import handIcon from "../../public/images/icons/hand.svg";
+import parentIcon from "../../public/images/icons/parent.svg";
 
 import serviceData from "../../data/service.json";
 
@@ -24,14 +23,14 @@ const ServiceCard = () => {
                 <div className="info-card--wrap">
                   <Image
                     src={data.cardImg}
-                    width={424}
+                    width={424} 
                     height={466}
                     className="info-card--img w-100"
                     alt="image"
                   />
                   <div className="card-img-overlay">
                     <div className="info-card--icon">
-                      <Image src={bagIcon} width={50} height={41} alt="image" />
+                      <Image src={bagIcon} width={50} height={42} alt="image" />
                     </div>
                     <span className="info-card--num">[00{data.serial}]</span>
                     <h4 className="info-card--title">{data.heading}</h4>
@@ -75,8 +74,8 @@ const ServiceCard = () => {
                     <div className="info-card--icon">
                       <Image
                         src={parentIcon}
-                        width={50}
-                        height={41}
+                        width={55}
+                        height={50}
                         alt="image"
                       />
                     </div>
@@ -123,7 +122,7 @@ const ServiceCard = () => {
                       <Image
                         src={handIcon}
                         width={50}
-                        height={41}
+                        height={30}
                         alt="image"
                       />
                     </div>

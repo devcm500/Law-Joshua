@@ -155,8 +155,8 @@ const Studies = () => {
                             <Link href={`case-details/${data.id}`}>
                               <Image
                                 src={data.img}
-                                width={500}
-                                height={460}
+                                width={data.imgWidth}
+                                height={data.imgHeight}
                                 unoptimized={true}
                                 alt="image"
                               />
