@@ -65,7 +65,7 @@ const Header = ({ bgDark }: HeaderProps) => {
                 <div className="law-header-info">
                   <Link href="callto:+9853025630" className="law-quick-contact" aria-label="Call for an appointment: (985) 302-5630">
                     <div className="law-quick-contact-icon">
-                      <PhoneIcon fill="#FF0000" />
+                      <PhoneIcon fill="#FFFFFF" />
                     </div>
                     <div className="content-part">
                       <p>Call for an appointment</p>
