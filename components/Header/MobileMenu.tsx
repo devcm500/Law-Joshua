@@ -36,7 +36,7 @@ const MobileMenu = () => {
               <NavList />
             </div>
           </div>
-          <Link className="law-quick-contact" href="callto:+9853025630">
+          <Link className="law-quick-contact" href="callto:+9853025630" aria-label="Call for an appointment: (985) 302-5630">
             <div className="law-quick-contact-icon">
               <svg
                 xmlns="http://www.w3.org/2000/svg"

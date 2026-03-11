@@ -45,7 +45,7 @@ const Team = () => {
             </div>
           </div>
           <div className="row row--15">
-            <div className="col-12" 
+            <div className="col-12"
               data-sal="slide-up"
               data-sal-duration="700"
               data-sal-delay="100"

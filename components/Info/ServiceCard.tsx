@@ -82,9 +82,9 @@ const ServiceCard = () => {
         {serviceData &&
           serviceData.service.slice(1, 2).map((data, i) => (
             <div className="col-md-6 col-lg-4 mb-3 mb-lg-0" key={i}
-            data-sal="slide-up"
-            data-sal-duration="700"
-            data-sal-delay="200"
+              data-sal="slide-up"
+              data-sal-duration="700"
+              data-sal-delay="200"
             >
               <div className="card info-card p-0">
                 <div className="info-card--wrap">

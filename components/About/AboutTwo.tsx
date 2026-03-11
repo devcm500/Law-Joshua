@@ -64,7 +64,7 @@ const AboutTwo = () => {
               data-sal-duration="700"
               data-sal-delay="100"
             >
-              Northshore Civil 
+              Northshore Civil
             </h3>
             <h2
               className="law__title"
@@ -98,9 +98,8 @@ const AboutTwo = () => {
                 {aboutData.aboutTwo.map((data, i) => (
                   <li key={i} className="nav-item m-0" role="presentation">
                     <button
-                      className={`nav-link text-capitalize ${
-                        data.isActive ? "active" : ""
-                      }`}
+                      className={`nav-link text-capitalize ${data.isActive ? "active" : ""
+                        }`}
                       data-bs-toggle="tab"
                       data-bs-target={`#${data.tab}-tab-pane`}
                       type="button"
@@ -117,9 +116,8 @@ const AboutTwo = () => {
                 {aboutData.aboutTwo.map((data, i) => (
                   <div
                     key={i}
-                    className={`tab-pane fade ${
-                      data.isActive ? "show active" : ""
-                    }`}
+                    className={`tab-pane fade ${data.isActive ? "show active" : ""
+                      }`}
                     id={`${data.tab}-tab-pane`}
                     role="tabpanel"
                     tabIndex={0}
@@ -159,9 +157,8 @@ const AboutTwo = () => {
           {aboutData.aboutCard.map((data, i) => (
             <div
               key={i}
-              className={`col-sm-6 col-lg-4 ${
-                data.isSpace ? "mt-4 mt-sm-0 mb-4 mb-lg-0" : ""
-              }`}
+              className={`col-sm-6 col-lg-4 ${data.isSpace ? "mt-4 mt-sm-0 mb-4 mb-lg-0" : ""
+                }`}
               data-sal="slide-up"
               data-sal-duration="700"
               data-sal-delay={100 * (i + 1)}

@@ -8,6 +8,7 @@ import teamData from "../../data/team.json";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebookF, faLinkedin, faLinkedinIn, faYoutube } from "@fortawesome/free-brands-svg-icons";
 
+
 import type { TeamMember } from "@/types";
 
 const TeamDetails = () => {
@@ -35,8 +36,8 @@ const TeamDetails = () => {
 
       <div className="team-details section-space-top">
         <div className="container">
-          <div className="row">
-            <div className="col-lg-5 text-center">
+          <div className="row justify-content-center">
+            <div className="col-md-10 col-lg-5 text-center">
               {checkMatch && (
                 <div className="h-100">
                   {checkMatch.img ? (
@@ -156,7 +157,7 @@ const TeamDetails = () => {
                             <span className="law-btn3d__shadows"></span>
                             <span className="law-btn3d__text">
                               <span className="btn-text">
-                                ☎️ Schedule A Consultation
+                                 Schedule A Consultation
                               </span>
                               <svg
                                 className="law-btn3d-icon-right"
