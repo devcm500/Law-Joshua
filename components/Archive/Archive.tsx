@@ -10,6 +10,7 @@ import Pagination from "../comon/Pagination";
 import { faMagnifyingGlass } from "@fortawesome/pro-regular-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
+import { ArrowRightIcon } from "../icons/SvgIcons";
 import type { Blog } from "@/types";
 
 interface ArchiveProps {
@@ -116,32 +117,7 @@ const Archive = ({
                             href={`/blog-details/${blog.slug}`}
                           >
                             Read More
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              width="18"
-                              height="13"
-                              viewBox="0 0 18 13"
-                              fill="none"
-                            >
-                              <path
-                                fillRule="evenodd"
-                                clipRule="evenodd"
-                                d="M17.4997 7.16006H0V5.66006H17.4997V7.16006Z"
-                                fill="#555C68"
-                              ></path>
-                              <path
-                                fillRule="evenodd"
-                                clipRule="evenodd"
-                                d="M16.7498 5.66003C13.2223 5.66003 10.3398 8.76213 10.3398 12.07V12.82H11.8398V12.07C11.8398 9.55853 14.0824 7.16003 16.7498 7.16003H17.4994V5.66003H16.7498Z"
-                                fill="#555C68"
-                              ></path>
-                              <path
-                                fillRule="evenodd"
-                                clipRule="evenodd"
-                                d="M16.7498 7.16005C13.2223 7.16005 10.3398 4.05791 10.3398 0.75V0H11.8398V0.75C11.8398 3.26158 14.0824 5.66005 16.7498 5.66005H17.4994V7.16005H16.7498Z"
-                                fill="#555C68"
-                              ></path>
-                            </svg>
+                            <ArrowRightIcon fill="#555C68" />
                           </Link>
                         </div>
                       </div>

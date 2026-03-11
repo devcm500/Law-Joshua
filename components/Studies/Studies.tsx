@@ -17,6 +17,7 @@ import {
 import SectionHead from "../Header/Section-Head";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft, faArrowRight } from "@fortawesome/pro-solid-svg-icons";
+import { ArrowRightIcon, CheckmarkIcon } from "../icons/SvgIcons";
 
 const Studies = () => {
   const swiperRef = useRef<any>(null);
@@ -125,18 +126,7 @@ const Studies = () => {
                             <ul>
                               {data.list.map((sublist, i) => (
                                 <li key={i}>
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="12"
-                                    height="10"
-                                    viewBox="0 0 12 10"
-                                    fill="none"
-                                  >
-                                    <path
-                                      d="M11.4519 0.231442C8.52691 2.66793 6.10261 6.15163 4.30184 9.92355C4.2537 10.0266 4.10444 10.0243 4.05629 9.92355C2.97053 7.57607 1.83662 5.8518 0.555857 4.94981C0.442715 4.87019 0.514935 4.69677 0.652161 4.71318C2.04367 4.8842 3.56516 5.76275 4.17907 6.66475C5.86187 3.81121 8.21153 1.691 11.2979 0.0182113C11.4399 -0.0590906 11.5747 0.128344 11.4519 0.231442Z"
-                                      fill="white"
-                                    />
-                                  </svg>
+                                  <CheckmarkIcon />
                                   <span className="law__about-tabs--text">
                                     {sublist.text.split(" ").length > 8
                                       ? sublist.text
@@ -156,32 +146,7 @@ const Studies = () => {
                               href={`case-details/${data.id}`}
                             >
                               View Case Studies
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="18"
-                                height="13"
-                                viewBox="0 0 18 13"
-                                fill="none"
-                              >
-                                <path
-                                  fillRule="evenodd"
-                                  clipRule="evenodd"
-                                  d="M17.4997 7.16006H0V5.66006H17.4997V7.16006Z"
-                                  fill="white"
-                                ></path>
-                                <path
-                                  fillRule="evenodd"
-                                  clipRule="evenodd"
-                                  d="M16.7498 5.66003C13.2223 5.66003 10.3398 8.76213 10.3398 12.07V12.82H11.8398V12.07C11.8398 9.55853 14.0824 7.16003 16.7498 7.16003H17.4994V5.66003H16.7498Z"
-                                  fill="white"
-                                ></path>
-                                <path
-                                  fillRule="evenodd"
-                                  clipRule="evenodd"
-                                  d="M16.7498 7.16005C13.2223 7.16005 10.3398 4.05791 10.3398 0.75V0H11.8398V0.75C11.8398 3.26158 14.0824 5.66005 16.7498 5.66005H17.4994V7.16005H16.7498Z"
-                                  fill="white"
-                                ></path>
-                              </svg>
+                              <ArrowRightIcon />
                             </Link>
                           </div>
                         </div>
