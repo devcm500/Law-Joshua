@@ -265,6 +265,7 @@ const Contact = () => {
                   )}
                 </div>
                 <div className="content">
+                  <label htmlFor="casetype" className="visually-hidden">Service Type</label>
                   <select
                     className="form-select contact__form-select"
                     id="casetype"

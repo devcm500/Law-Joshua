@@ -212,10 +212,10 @@ const Studies = () => {
               <div className="custom-pagination custom-pagination-vertical style-one"></div>
               <div className="law-scrollbar law-scrollbar-style-one"></div>
               <div className="case__slider-button">
-                <button className="case__slider-btn case__slider-btn--prev">
+                <button className="case__slider-btn case__slider-btn--prev" aria-label="Previous slide">
                   <FontAwesomeIcon icon={faArrowLeft} />
                 </button>
-                <button className="case__slider-btn case__slider-btn--next">
+                <button className="case__slider-btn case__slider-btn--next" aria-label="Next slide">
                   <FontAwesomeIcon icon={faArrowRight} />
                 </button>
               </div>

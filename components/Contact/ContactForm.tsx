@@ -244,6 +244,7 @@ const ContactForm = () => {
               )}
             </div>
             <div className="content">
+              <label htmlFor="casetype" className="visually-hidden">Case Type</label>
               <select
                 className="form-select contact__form-select contact__form-bgwhite"
                 id="casetype"

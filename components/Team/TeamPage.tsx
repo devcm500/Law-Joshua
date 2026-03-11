@@ -8,7 +8,7 @@ import signature from "../../public/images/bg/signature.svg";
 import Brand from "../Brand/Brand";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlus } from "@fortawesome/pro-solid-svg-icons";
-  
+
 const TeamMemberPage = () => {
   return (
     <>
@@ -194,9 +194,8 @@ const TeamMemberPage = () => {
               {teamData &&
                 teamData.team.slice(1, 5).map((data, i) => (
                   <div
-                    className={`col-sm-6 col-md-6 col-xl-3 text-center text-sm-start ${
-                      !data.isGap ? "mb-4 mb-xl-0" : ""
-                    }`}
+                    className={`col-sm-6 col-md-6 col-xl-3 text-center text-sm-start ${!data.isGap ? "mb-4 mb-xl-0" : ""
+                      }`}
                     key={i}
                     data-sal="slide-up"
                     data-sal-duration="700"

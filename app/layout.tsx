@@ -87,7 +87,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en" className={fontVariables} suppressHydrationWarning>
       <body className="law-main" suppressHydrationWarning>
         <BootstrapClient />
-        {children}
+        <main>{children}</main>
       </body>
     </html>
   );
