@@ -11,6 +11,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlus, faPercent } from "@fortawesome/pro-solid-svg-icons";
 
 import type { IconDefinition } from "@fortawesome/fontawesome-svg-core";
+import { CheckmarkIcon } from "../icons/SvgIcons";
 
 const iconMap: Record<string, IconDefinition> = {
   faPlus,
@@ -127,17 +128,7 @@ const AboutTwo = () => {
                       <ul>
                         {data.list.map((sublist, j) => (
                           <li key={j}>
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              width="12"
-                              height="10"
-                              viewBox="0 0 12 10"
-                            >
-                              <path
-                                d="M11.4519 0.231442C8.52691 2.66793 6.10261 6.15163 4.30184 9.92355C4.2537 10.0266 4.10444 10.0243 4.05629 9.92355C2.97053 7.57607 1.83662 5.8518 0.555857 4.94981C0.442715 4.87019 0.514935 4.69677 0.652161 4.71318C2.04367 4.8842 3.56516 5.76275 4.17907 6.66475C5.86187 3.81121 8.21153 1.691 11.2979 0.0182113C11.4399 -0.0590906 11.5747 0.128344 11.4519 0.231442Z"
-                                fill="white"
-                              />
-                            </svg>
+                            <CheckmarkIcon />
                             <span className="law__about-tabs--text">
                               {sublist.text}
                             </span>
