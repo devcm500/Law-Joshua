@@ -62,8 +62,8 @@
         }
 
         @media #{$xs-device} {
-            height: 100px;
-            width: 100px !important;
+            width: 85px !important;
+            height: 85px;
         }
         }
     }
@@ -106,6 +106,7 @@ $animationSpeed: 10s;
         position: absolute;
         width: 100px;
         z-index: 2;
+        pointer-events: none;
     }
 
     &::after {

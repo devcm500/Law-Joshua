@@ -10,7 +10,7 @@ import Header from "../Header/Header";
 import bannerContentImg from "../../public/images/banner/banner-content.svg";
 import bannerContentImg2 from "../../public/images/banner/banner-content-top.svg";
 import bannerHeroImg from "../../public/images/banner/banner-hero.png";
-import { BellIcon } from "../icons/SvgIcons";
+import bellIcon from "../../public/images/icons/bell.png";
 
 const Banner = () => {
   useEffect(() => {
@@ -36,7 +36,8 @@ const Banner = () => {
                  <div className="banner__content text-center">
                   {/* <h1 className="banner__title">Let freedom Ring </h1> */}
                   {/* <h1 className="banner__title">exceptional advocacy</h1> */}
-                  <BellIcon className="banner__content-img-icon" />
+                  {/* <BellIcon className="banner__content-img-icon" /> */}
+                  <Image src={bellIcon} className="banner__content-img-icon" alt="image" width={160} height={160} />
                   <Image className="banner__content-img-top" src={bannerContentImg2} alt="image" width={711} height={139} />
                   <Image
                     className="banner__content-img"
