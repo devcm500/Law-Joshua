@@ -210,9 +210,9 @@
     &__content-img-icon {
         display: block;
         margin: 0 auto;
-        margin-bottom: 30px;
+        margin-bottom: 14px;
         @media #{$xxl-device} {
-            margin-bottom: 20px;
+            margin-bottom: 10px;
             max-width: 100px;
             height: auto;
         }
